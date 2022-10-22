@@ -6,19 +6,31 @@ html
 
 .page
   height: 100%
-  font-family: Montserrat, EuropeExt, sans-serif // ИСправить
+  font-family: $font-family
   -webkit-text-size-adjust: 100%
 
 .page__body
+  background-color: #000
   margin: 0
   min-width: 320px
   min-height: 100%
   font-size: 16px
 
+.container
+  margin: 0 auto
+  padding: 0 $container-offset
+  max-width: $container-width
+
+.burger
+  @include burger
+
 img
   height: auto
   max-width: 100%
   object-fit: cover
+
+ul,ol
+  list-style: none
 
 a
   text-decoration: none
