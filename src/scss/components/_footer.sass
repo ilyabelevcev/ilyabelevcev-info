@@ -1,0 +1,29 @@
+.footer
+  padding: 15px 0px
+  .footer__container
+    @include flex-all-center
+    flex-direction: column
+  .footer__logo
+    .footer__logo-img
+      width: 50px
+  .footer__gmail
+    margin-top: 15px
+    color: #fff
+    transition: color 0.1s ease-in-out
+    @include hover
+        color: #2db2ff
+  .footer__socials
+    margin-top: 15px
+    .footer__socials-list
+      @include flex-v-center
+    .footer__socials-item
+      @include mr(15px)
+    .footer__socials-icon
+      path
+        transition: fill 0.1s ease-in-out
+      &:hover
+        path
+          fill: #2db2ff
+  .footer__legal
+    margin-top: 30px
+    color: #fff
