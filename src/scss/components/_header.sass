@@ -1,20 +1,34 @@
 .header
+  padding: 15px 0px
   .header__container
     @include flex-all-sb
   .header__logo
+    margin-right: auto
     .header__logo-img
+      width: 60px
   .header__nav
     .header__nav-list
-      @include flex
+      @include flex-v-center
     .header__nav-item
+      @include mr(50px)
     .header__nav-link
+      font-weight: 500
+      color: #fff
+      transition: color 0.1s ease-in-out
+      @include hover
+        color: #2db2ff
   .header__socials
-    .header__socials
+    margin-left: 150px
     .header__socials-list
-      @include flex
+      @include flex-v-center
     .header__socials-item
-    .header__socials-link
+      @include mr(15px)
     .header__socials-icon
+      path
+        transition: fill 0.1s ease-in-out
+      &:hover
+        path
+          fill: #2db2ff
   .burger
     color: #fff
-    display: none:
+    display: none

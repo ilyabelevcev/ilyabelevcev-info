@@ -26,6 +26,10 @@
   align-items: center
   justify-content: space-between
 
+@mixin hover
+  &:hover
+    @content
+
 $browser-context: 16 // Default
 
 @function rem($pixels, $context: $browser-context)

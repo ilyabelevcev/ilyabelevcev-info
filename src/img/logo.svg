@@ -14,18 +14,25 @@
      id="metadata8"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs6" /><g
+     id="defs6"><clipPath
+       id="clipPath18"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path16"
+         d="M 0,0 H 375 V 375 H 0 Z" /></clipPath></defs><g
      transform="matrix(1.3333333,0,0,-1.3333333,0,500)"
      id="g10"><g
-       transform="translate(144.1116,345.537)"
-       id="g12"><path
-         id="path14"
+       id="g12"><g
+         clip-path="url(#clipPath18)"
+         id="g14"><text
+           id="text22"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:323.3006897px;font-family:Montserrat;-inkscape-font-specification:Montserrat-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-1,-32.0303,6.5693)"><tspan
+             id="tspan20"
+             y="0"
+             x="0 97.63681 341.40555">IBI</tspan></text>
+</g></g><g
+       transform="translate(120.375,375.0003)"
+       id="g24"><path
+         id="path26"
          style="fill:#7aceff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         d="M 0,0 43.5,-75.744 86.999,0 Z" /></g><text
-       id="text18"
-       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:232.22479248px;font-family:Montserrat;-inkscape-font-specification:Montserrat-Regular;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       transform="matrix(1,0,0,-1,29.8135,77.8818)"><tspan
-         id="tspan16"
-         y="0"
-         x="0 70.131889 245.22939">IBI</tspan></text>
-</g></svg>
+         d="M 0,0 67.125,-117 134.25,0 Z" /></g></g></svg>
