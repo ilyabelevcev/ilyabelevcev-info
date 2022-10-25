@@ -1,11 +1,17 @@
 .header
-  padding: 15px 0px
+  padding: 40px 0px
   .header__container
     @include flex-all-sb
   .header__logo
+    @include flex-v-center
     margin-right: auto
-    .header__logo-img
-      width: 60px
+    .header__logo-icon
+      width: 35px
+    .header__logo-name
+      color: #fff
+      font-size: 25px
+      text-transform: uppercase
+      margin-left: 15px
   .header__nav
     .header__nav-list
       @include flex-v-center

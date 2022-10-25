@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  @include('partials/head.html')
-  <body class="page__body">
-    <div class="site-container">
+@include('partials/head.html')
+<body class="page__body">
+   <div class="site-container">
       @include('partials/header.html')
-      <main class="main"></main>
+      <main class="main">
+         <section class="hero">
+            <div class="container hero__container">
+               <h1 class="hero__title">ILYABELEVCEV</h1>
+               <p class="hero__descr">Здравствуйте! Меня зовут Илья, я Frontend Разработчик(Junior) | HTML-верстальщик</p>
+            </div>
+         </section>
+         <section class="skills">
+            <div class="container skills__container">
+               <h2 class="skiils__title">Моя квалификация</h2>
+               <p class="skills__descr"></p>
+               <div class="swiper ">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="works">
+            <div class="container works__container"></div>
+         </section>
+         <section class="form">
+            <div class="container form__container">
+            <!-- <form class="form__feedback" action="#"></form> -->
+            </div>
+         </section>
+         <section class="map">
+            <div class="container map__container"></div>
+         </section>
+         <section class="contacts">
+            <div class="container contacts__container"></div>
+         </section>
+      </main>
       @include('partials/footer.html')
-    </div>
-  </body>
+   </div>
+</body>
 </html>
