@@ -1,0 +1,45 @@
+.abilities
+  padding: 100px 0px 50px 0px
+  .abilities__container
+    color: #fff
+    @include flex-v-center
+    flex-direction: column
+  .abilities__title
+    font-size: 35px
+    margin: 0 0px 30px 0px
+  .abilities__list
+    max-width: 70%
+    .abilities__list-item
+      border-top: 1px solid #333
+      &:not(:last-child)
+        margin-bottom: 50px
+    .abilities__item-heading
+      margin-bottom: 40px
+      font-weight: 400
+      padding: 40px 0px 0px 20px
+      color: #909090
+    .abilities__list-wrapper
+      @include flex
+      flex-wrap: wrap
+      justify-content: space-between
+    .abilities__wrapper-item
+      @include flex-all-sb
+      width: 45%
+      padding: 5px
+      &:not(:nth-child(-n+2))
+        margin-top: 5px
+      &:hover
+        background-color: #505050
+        border-radius: 10px
+        .abilities__level-icon
+          &:not(:first-child)
+            margin-left: 3px
+    .abilities__wrapper-ability
+      font-size: 20px
+    .abilities__wrapper-level
+      @include flex-v-center
+    .abilities__level-icon
+      width: 19px
+      height: 19px
+      transition: margin 0.2s ease-in-out
+
