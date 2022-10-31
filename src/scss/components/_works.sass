@@ -1,0 +1,118 @@
+.works
+  padding: 100px 0px 50px 0px
+  .works__container
+    color: #fff
+    @include flex-v-center
+    flex-direction: column
+  .works__title
+    font-size: 35px
+    margin: 0 0px 30px 0px
+  .works__descr
+    font-size: 20px
+    text-align: center
+    max-width: 80%
+    margin-bottom: 100px
+  .works__list
+    position: relative
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: -8px
+    max-width: 100%
+    &::before
+      content: '\201CНиже представлена меньшая часть моих проектов\201C'
+      position: absolute
+      font-style: italic
+      top: -30px
+      left: 50%
+      transform: translateX(-50%)
+      color: #fff
+      opacity: 0.4
+    .works__list-item
+      margin: 8px
+      flex: 1 1 45%
+      position: relative
+      overflow: hidden
+      &:hover
+        .works__item-img
+          opacity: 0.2
+          z-index: 0
+          transform: scale(1.2)
+        .works__item-description
+          // transform: translateX(0)
+          z-index: 1
+        .works__descr-heading
+          &::after
+            width: 100%
+        .works__descr-text
+          transform: translateX(0)
+        .works__descr-tags
+          transform: translateX(0)
+    .works__item-img
+      position: relative
+      z-index: 1
+      width: 100%
+      height: 100%
+      transition: 0.2s ease-in-out
+    .works__item-description
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      padding: 20px 30px
+      position: absolute
+      z-index: 0
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      font-style: italic
+      transition: 0.4s ease-in-out
+    .works__descr-icon
+      width: 50px
+      height: 50px
+      position: absolute
+      right: 2px
+      top: 2px
+    .works__descr-heading
+      font-size: 40px
+      font-weight: 500
+      @include flex
+      flex-direction: column
+      &::after
+        @include pseudo
+        width: 0%
+        height: 2px
+        background-color: #fff
+        border-radius: 5px
+        margin: 15px 0px
+        transition: 0.4s ease-in-out
+    .works__descr-text
+      margin-bottom: 30px
+      transition: 0.2s ease-in-out
+      transform: translateX(-100%)
+    .works__descr-tags
+      transition: 0.2s ease-in-out
+      transform: translateX(-100%)
+    .works__item-link
+      z-index: 1000
+      text-indent: 200%
+      white-space: nowrap
+      font-size: 0
+      opacity: 0
+      position: absolute
+      top: 0px
+      left: 0px
+      height: 100%
+      width: 100%
+  .works__link-more
+    display: block
+    padding: 10px 20px
+    color: #fff
+    border: 1px solid #fff
+    border-radius: 20px
+    margin-top: 50px
+    transition: 0.2s ease-in-out
+    &:hover
+      color: #2db2ff
+      border-color: #2db2ff
+      border-radius: 0px
