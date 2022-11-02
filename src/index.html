@@ -343,6 +343,16 @@
                         <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
                       </div>
                     </li>
+                    <li class="abilities__wrapper-item">
+                      <div class="abilities__wrapper-ability">TortoiseGit</div>
+                      <div class="abilities__wrapper-level ">
+                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                      </div>
+                    </li>
                   </ul>
                 </li>
                 <li class="abilities__list-item">
@@ -376,7 +386,7 @@
          <section class="works">
             <div class="container works__container">
               <h2 class="works__title">Мои работы</h2>
-              <p class="works__descr">Я всегда старался следить за прогрессом в отрасли, чтобы расти не только профессионально, но и с точки зрения понимания трендов собственной сферы. Это позволяет мне находить инновационные решения, стоящих передо мной и моими клиентами задач.</p>
+              <p class="works__descr">Я всегда старался следить за прогрессом сфере, чтобы расти не только профессионально, но и с точки зрения понимания собственной отрасли. Это позволяет мне находить решения, стоящих передо мной задач.</p>
               <ul class="works__list">
                 <li class="works__list-item">
                   <picture>
@@ -454,13 +464,81 @@
               <a href="https://github.com/ilyabelevcev" target="_blank" class="works__link-more">Посмотреть проекты на Github</a>
             </div>
          </section>
-         <section class="form">
+         <section class="form" id="form">
             <div class="container form__container">
-            <!-- <form class="form__feedback" action="#"></form> -->
+              <div class="form__info">
+                <h2 class="form__info-title">Как со мной связаться?</h2>
+                <p class="form__info-descr">
+                  Заполните форму для обратной связи
+                  <span>или</span>
+                  напишите мне на почту
+                </p>
+                <a href="mailto:ilyabelevcev00@gmail.com" class="form__info-link">ilyabelevcev00@gmail.com</a>
+              </div>
+              <form class="form__feedback" id="form-feedback" action="sendmail.php">
+                <label class="form__feedback-label" for="name">
+                  Имя *
+                  <input
+                    placeholder="Введите свое имя"
+                    title="Обязательное поле для заполнения"
+                    class="form__feedback-input __req"
+                    id="name"
+                    name="name"
+                    type="text">
+                </label>
+                <label class="form__feedback-label" for="email">
+                  Эл. почта *
+                  <input
+                    placeholder="Добавьте эл. почту"
+                    title="Обязательное поле для заполнения"
+                    class="form__feedback-input __req __email"
+                    id="email"
+                    name="email"
+                    type="mail">
+                </label>
+                <label class="form__feedback-label" for="city">
+                  Город
+                  <input
+                    placeholder="Добавьте свой город"
+                    title="Необязательное поле для заполнения"
+                    class="form__feedback-input"
+                    id="city"
+                    name="city"
+                    type="text">
+                </label>
+                <label class="form__feedback-label" for="tel">
+                  Телефон
+                  <input
+                    placeholder="Добавьте номер телефона"
+                    title="Необязательное поле для заполнения"
+                    class="form__feedback-input"
+                    id="tel"
+                    name="tel"
+                    type="tel">
+                </label>
+                <label class="form__feedback-label" for="topic">
+                  Тема
+                  <input
+                    placeholder="Добавьте тему"
+                    title="Необязательное поле для заполнения"
+                    class="form__feedback-input"
+                    id="topic"
+                    name="topic"
+                    type="text">
+                </label>
+                <label class="form__feedback-label" for="msg">
+                  Сообщение *
+                  <textarea
+                    placeholder="Добавьте сообщение"
+                    title="Обязательное поле для заполнения"
+                    class="form__feedback-input __req"
+                    name="msg"
+                    id="msg"
+                    rows="10"></textarea>
+                </label>
+                <button class="form__feedback-btn" type="submit">Отправить</button>
+              </form>
             </div>
-         </section>
-         <section class="contacts">
-            <div class="container contacts__container"></div>
          </section>
       </main>
       @include('partials/footer.html')
