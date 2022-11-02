@@ -5,7 +5,3 @@
 # may need
 README.md
 package-lock.json
-
-# PHP
-src/resources/phpmailer
-src/resources/mail.php
