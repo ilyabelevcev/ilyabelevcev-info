@@ -4,11 +4,10 @@
     @include flex-all-sb
   .header__logo
     @include flex-v-center
-    margin-right: auto
     .header__logo-icon
       width: 35px
     .header__logo-name
-      color: #fff
+      color: $default-text-color
       font-size: 25px
       text-transform: uppercase
       margin-left: 15px
@@ -16,15 +15,18 @@
     .header__nav-list
       @include flex-v-center
     .header__nav-item
+      // margin: 0px 30px
       @include mr(50px)
     .header__nav-link
       font-weight: 500
-      color: #fff
+      color: $default-text-color
+      letter-spacing: 2px
       transition: color 0.1s ease-in-out
+      &.active
+        color: $active-hover-color
       &:hover
-        color: #2db2ff
+        color: $active-hover-color
   .header__socials
-    margin-left: 150px
     .header__socials-list
       @include flex-v-center
     .header__socials-item
@@ -34,7 +36,7 @@
         transition: fill 0.1s ease-in-out
       &:hover
         path
-          fill: #2db2ff
+          fill: $active-hover-color
   .burger
-    color: #fff
+    color: $default-text-color
     display: none

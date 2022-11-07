@@ -4,6 +4,8 @@ const {
   series,
   watch
 } = require('gulp');
+const webpHtmlNosvg = require('gulp-webp-html-nosvg');
+const webpcss = require('gulp-webpcss');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const del = require('del');
@@ -99,6 +101,12 @@ const styles = () => {
       })
     ))
     .pipe(mainSass())
+    .pipe(gulpif(!isProd,webpcss({
+              webpClass: ".webp",
+              noWebpClass: ".no-webp"
+          })
+        )
+    )
     .pipe(autoprefixer({
       cascade: false,
       grid: true,
@@ -250,6 +258,7 @@ const htmlInclude = () => {
     // .pipe(typograf({
     //   locale: ['ru', 'en-US']
     // }))
+    .pipe(gulpif(!isProd, webpHtmlNosvg()))
     .pipe(dest(buildFolder))
     .pipe(browserSync.stream());
 }

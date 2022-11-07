@@ -1,543 +1,549 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-@include('partials/head.html')
-<body class="page__body">
-   <div class="site-container">
+@include('partials/head.html', {"title": "IlyaBelevcev | Frontend Developer"})
+<body class="page__body main">
+    @include('partials/preloader.html')
+   <div  class="site-container">
       @include('partials/header.html')
-      <main class="main">
-         <section class="hero">
-            <div class="container hero__container">
-               <h1 class="hero__title">ILYABELEVCEV</h1>
-               <p class="hero__descr">Здравствуйте! Меня зовут Илья, я Frontend Разработчик(Junior) | HTML-верстальщик</p>
+      <section class="main hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__content-title">ILYABELEVCEV</h1>
+            <p class="hero__content-descr">Здравствуйте! Меня зовут Илья, я Frontend Разработчик(Junior) | HTML-верстальщик</p>
+          </div>
+          <div class="swiper hero__swiper">
+            <div class="hero__swiper-wrapper swiper-wrapper">
+              <div class="hero__swiper-slide hero__first-slide swiper-slide">
+                <img src="./img/hero-first-img.jpg" class="hero__slide-img">
+              </div>
+              <div class="hero__swiper-slide hero__third-slide swiper-slide">
+                <img src="./img/hero-second-img.jpg" class="hero__slide-img">
+              </div>
+              <div class="hero__swiper-slide hero__fourth-slide swiper-slide">
+                <img src="./img/hero-third-img.jpg" class="hero__slide-img">
+              </div>
             </div>
-         </section>
-         <section class="abilities">
-            <div class="container abilities__container">
-               <h2 class="abilities__title">Умения и используемые технологии</h2>
-               <ul class="abilities__list">
-                <li class="abilities__list-item">
-                  <h3 class="abilities__item-heading"><i>Технические навыки</i></h3>
-                  <ul class="abilities__list-wrapper">
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">HTML(5)</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">PUG</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">CSS(3)</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Sass</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">SCSS</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">GIT</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">JavaScript</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Vue.js</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">JSON</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">JQuery</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Gulp</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">ООП</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">PixelPerfect</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">BEM</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">React.js</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Адаптивность</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Кроссбраузерность</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="abilities__list-item">
-                  <h3 class="abilities__item-heading"><i>Инструменты</i></h3>
-                  <ul class="abilities__list-wrapper">
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Google Chrome</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Firefox</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Opera</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Yandex</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Edge</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Squoosh</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">MS Office</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">GitHub</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Sublime Text 3</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">VS Code</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Adobe Photoshop</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Adobe Illustrator</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Figma</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Windows</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">VMware Workstation</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">TortoiseGit</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="abilities__list-item">
-                  <h3 class="abilities__item-heading"><i>Языки</i></h3>
-                  <ul class="abilities__list-wrapper">
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Русский</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                    <li class="abilities__wrapper-item">
-                      <div class="abilities__wrapper-ability">Английский</div>
-                      <div class="abilities__wrapper-level ">
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                        <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-               </ul>
-            </div>
-         </section>
-         <section class="works">
-            <div class="container works__container">
-              <h2 class="works__title">Мои работы</h2>
-              <p class="works__descr">Я всегда старался следить за прогрессом сфере, чтобы расти не только профессионально, но и с точки зрения понимания собственной отрасли. Это позволяет мне находить решения, стоящих передо мной задач.</p>
-              <ul class="works__list">
-                <li class="works__list-item">
-                  <picture>
-                    <source srcset="./img/evclid-site.webp" type="image/webp">
-                    <img class="works__item-img" loading="lazy" src="./img/evclid-site.png" class="image">
-                  </picture>
-                  <div class="works__item-description">
-                    <img src="./img/link.svg" alt="Link" class="works__descr-icon">
-                    <h3 class="works__descr-heading">Evclid</h3>
-                    <p class="works__descr-text">Адаптивная вёрстка сайта проектных систем. Адаптивность и кроссбраузерность. Использование библиотеки Swiper. </p>
-                    <p class="works__descr-tags">
-                      <strong>Теги:</strong>
-                      <br>
-                      <br>
-                      HTML, CSS, JavaScript, Flexbox, Swiper, JQuery, InputMask, Gulp, Optimization
-                    </p>
+            <div class="hero__swiper-pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="main abilities">
+        <div class="container abilities__container">
+            <h2 class="abilities__title">Умения и используемые технологии</h2>
+            <ul class="abilities__list">
+            <li class="abilities__list-item">
+              <h3 class="abilities__item-heading"><i>Технические навыки</i></h3>
+              <ul class="abilities__list-wrapper">
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">HTML(5)</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
                   </div>
-                  <a href="https://ilyabelevcev.github.io/evclid/" class="works__item-link" target="_blank"></a>
                 </li>
-                <li class="works__list-item">
-                  <picture>
-                    <source srcset="./img/stat4market-site.webp" type="image/webp">
-                    <img class="works__item-img" loading="lazy" src="./img/stat4market-site.png" class="image">
-                  </picture>
-                  <div class="works__item-description">
-                    <img src="./img/link.svg" alt="Link" class="works__descr-icon">
-                    <h3 class="works__descr-heading">Stat4market</h3>
-                    <p class="works__descr-text">Адаптивная вёрстка сайта обучения по работе с маркетплейсами. Кроссбраузерность, доступность, оптимизация изображений на сайте, формат WebP.</p>
-                    <p class="works__descr-tags">
-                      <strong>Теги:</strong>
-                      <br>
-                      <br>
-                      HTML, PUG, CSS, SCSS, media-запросы, Адаптивность, Optimization, JavaScript, Flexbox, Gulp, Доступность
-                    </p>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">PUG</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
                   </div>
-                  <a href="https://ilyabelevcev.github.io/stat4market_site/" class="works__item-link" target="_blank"></a>
                 </li>
-                <li class="works__list-item">
-                  <picture>
-                    <source srcset="./img/spacelance-site.webp" type="image/webp">
-                    <img class="works__item-img" loading="lazy" src="./img/spacelance-site.png" class="image">
-                  </picture>
-                  <div class="works__item-description">
-                    <img src="./img/link.svg" alt="Link" class="works__descr-icon">
-                    <h3 class="works__descr-heading">Spacelance</h3>
-                    <p class="works__descr-text">Адаптивная вёрстка сайта по поиску фрилансеров. Кроссбраузерность, доступность, оптимизация и сжатие изображений на сайте, формат WebP</p>
-                    <p class="works__descr-tags">
-                      <strong>Теги:</strong>
-                      <br>
-                      <br>
-                      HTML, PUG, CSS, Sass, JavaScript, SlickSlider, JQuery, Flexbox, Gulp, Доступность, media-запросы, Адаптивность
-                    </p>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">CSS(3)</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
                   </div>
-                  <a href="https://ilyabelevcev.github.io/spacelance/" class="works__item-link" target="_blank"></a>
                 </li>
-                <li class="works__list-item">
-                  <picture>
-                    <source srcset="./img/lagoona-site.webp" type="image/webp">
-                    <img class="works__item-img" loading="lazy" src="./img/lagoona-site.png" class="image">
-                  </picture>
-                  <div class="works__item-description">
-                    <img src="./img/link.svg" alt="Link" class="works__descr-icon">
-                    <h3 class="works__descr-heading">Lagoona</h3>
-                    <p class="works__descr-text">Адаптивная вёрстка сайта по поиску отелей. Доступность и кроссбраузерность.</p>
-                    <p class="works__descr-tags">
-                      <strong>Теги:</strong>
-                      <br>
-                      <br>
-                      HTML, Optimization, CSS, JavaScript, Flexbox, Gulp, JQuery, media-запросы, Адаптивность, Доступность
-                    </p>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Sass</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
                   </div>
-                  <a href="https://ilyabelevcev.github.io/lagoona/" class="works__item-link" target="_blank"></a>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">SCSS</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">GIT</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">JavaScript</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Vue.js</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">JSON</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">JQuery</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Gulp</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">ООП</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">PixelPerfect</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">BEM</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">React.js</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Адаптивность</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Кроссбраузерность</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
                 </li>
               </ul>
-              <a href="https://github.com/ilyabelevcev" target="_blank" class="works__link-more">Посмотреть проекты на Github</a>
-            </div>
-         </section>
-         <!-- Из-за проблем с PHP было принято решение пока что не использовать форму-->
-         <section class="form" id="form">
-            <div class="container form__container">
-              <div class="form__info">
-                <h2 class="form__info-title">Как со мной связаться?</h2>
-                <p class="form__info-descr">Напишите мне на почту</p>
-                <a href="mailto:ilyabelevcev00@gmail.com" class="form__info-link">ilyabelevcev00@gmail.com</a>
+            </li>
+            <li class="abilities__list-item">
+              <h3 class="abilities__item-heading"><i>Инструменты</i></h3>
+              <ul class="abilities__list-wrapper">
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Google Chrome</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Firefox</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Opera</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Yandex</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Edge</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Squoosh</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">MS Office</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">GitHub</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Sublime Text 3</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">VS Code</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Adobe Photoshop</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Adobe Illustrator</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Figma</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Windows</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">VMware Workstation</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">TortoiseGit</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="abilities__list-item">
+              <h3 class="abilities__item-heading"><i>Языки</i></h3>
+              <ul class="abilities__list-wrapper">
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Русский</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+                <li class="abilities__wrapper-item">
+                  <div class="abilities__wrapper-ability">Английский</div>
+                  <div class="abilities__wrapper-level ">
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#2db2ff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                    <svg class="abilities__level-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#fff" d="M12 .288l2.833 8.718h9.167l-7.417 5.389 2.833 8.718-7.416-5.388-7.417 5.388 2.833-8.718-7.416-5.389h9.167z"/></svg>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+      </section>
+      <section class="main works">
+        <div class="container works__container">
+          <h2 class="works__title">Мои работы</h2>
+          <p class="works__descr">Я всегда старался следить за прогрессом сфере, чтобы расти не только профессионально, но и с точки зрения понимания собственной отрасли. Это позволяет мне находить решения, стоящих передо мной задач.</p>
+          <ul class="works__list">
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/evclid-site.png">
+              <div class="works__item-description">
+                <img src="./img/link.svg" alt="Link" class="works__descr-icon">
+                <h3 class="works__descr-heading">Evclid</h3>
+                <p class="works__descr-text">Адаптивная вёрстка сайта проектных систем. Адаптивность и кроссбраузерность. Использование библиотеки Swiper. </p>
+                <p class="works__descr-tags">
+                  <strong>Теги:</strong>
+                  <br>
+                  <br>
+                  HTML, CSS, JavaScript, Flexbox, Swiper, JQuery, InputMask, Gulp, Optimization
+                </p>
               </div>
-              <!-- <form class="form__feedback" id="form-feedback" action="/sendmail.php">
-                <label class="form__feedback-label" for="name">
-                  Имя *
-                  <input
-                    placeholder="Введите свое имя"
-                    title="Обязательное поле для заполнения"
-                    class="form__feedback-input __req"
-                    id="name"
-                    name="name"
-                    type="text">
-                </label>
-                <label class="form__feedback-label" for="email">
-                  Эл. почта *
-                  <input
-                    placeholder="Добавьте эл. почту"
-                    title="Обязательное поле для заполнения"
-                    class="form__feedback-input __req __email"
-                    id="email"
-                    name="email"
-                    type="mail">
-                </label>
-                <label class="form__feedback-label" for="city">
-                  Город
-                  <input
-                    placeholder="Добавьте свой город"
-                    title="Необязательное поле для заполнения"
-                    class="form__feedback-input"
-                    id="city"
-                    name="city"
-                    type="text">
-                </label>
-                <label class="form__feedback-label" for="tel">
-                  Телефон
-                  <input
-                    placeholder="Добавьте номер телефона"
-                    title="Необязательное поле для заполнения"
-                    class="form__feedback-input"
-                    id="tel"
-                    name="tel"
-                    type="tel">
-                </label>
-                <label class="form__feedback-label" for="topic">
-                  Тема
-                  <input
-                    placeholder="Добавьте тему"
-                    title="Необязательное поле для заполнения"
-                    class="form__feedback-input"
-                    id="topic"
-                    name="topic"
-                    type="text">
-                </label>
-                <label class="form__feedback-label" for="msg">
-                  Сообщение *
-                  <textarea
-                    placeholder="Добавьте сообщение"
-                    title="Обязательное поле для заполнения"
-                    class="form__feedback-input __req"
-                    name="msg"
-                    id="msg"
-                    rows="10"></textarea>
-                </label>
-                <button class="form__feedback-btn" type="submit">Отправить</button>
-              </form> -->
-            </div>
-         </section>
-      </main>
+              <a href="https://ilyabelevcev.github.io/evclid/" class="works__item-link" target="_blank"></a>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/stat4market-site.png">
+              <div class="works__item-description">
+                <img src="./img/link.svg" alt="Link" class="works__descr-icon">
+                <h3 class="works__descr-heading">Stat4market</h3>
+                <p class="works__descr-text">Адаптивная вёрстка сайта обучения по работе с маркетплейсами. Кроссбраузерность, доступность, оптимизация изображений на сайте, формат WebP.</p>
+                <p class="works__descr-tags">
+                  <strong>Теги:</strong>
+                  <br>
+                  <br>
+                  HTML, PUG, CSS, SCSS, media-запросы, Адаптивность, Optimization, JavaScript, Flexbox, Gulp, Доступность
+                </p>
+              </div>
+              <a href="https://ilyabelevcev.github.io/stat4market_site/" class="works__item-link" target="_blank"></a>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/spacelance-site.png">
+              <div class="works__item-description">
+                <img src="./img/link.svg" alt="Link" class="works__descr-icon">
+                <h3 class="works__descr-heading">Spacelance</h3>
+                <p class="works__descr-text">Адаптивная вёрстка сайта по поиску фрилансеров. Кроссбраузерность, доступность, оптимизация и сжатие изображений на сайте, формат WebP</p>
+                <p class="works__descr-tags">
+                  <strong>Теги:</strong>
+                  <br>
+                  <br>
+                  HTML, PUG, CSS, Sass, JavaScript, SlickSlider, JQuery, Flexbox, Gulp, Доступность, media-запросы, Адаптивность
+                </p>
+              </div>
+              <a href="https://ilyabelevcev.github.io/spacelance/" class="works__item-link" target="_blank"></a>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/lagoona-site.png">
+              <div class="works__item-description">
+                <img src="./img/link.svg" alt="Link" class="works__descr-icon">
+                <h3 class="works__descr-heading">Lagoona</h3>
+                <p class="works__descr-text">Адаптивная вёрстка сайта по поиску отелей. Доступность и кроссбраузерность.</p>
+                <p class="works__descr-tags">
+                  <strong>Теги:</strong>
+                  <br>
+                  <br>
+                  HTML, Optimization, CSS, JavaScript, Flexbox, Gulp, JQuery, media-запросы, Адаптивность, Доступность
+                </p>
+              </div>
+              <a href="https://ilyabelevcev.github.io/lagoona/" class="works__item-link" target="_blank"></a>
+            </li>
+          </ul>
+          <div class="works__links-more">
+            <a href="portfolio.html" class="works__link-more">Перейти в портфолио</a>
+            <a href="https://github.com/ilyabelevcev" target="_blank" class="works__link-more">Посмотреть проекты на Github</a>
+          </div>
+        </div>
+      </section>
+      <!-- Из-за проблем с PHP было принято решение пока что не использовать форму-->
+      <section class="main form" id="form">
+        <div class="container form__container">
+          <div class="form__info">
+            <h2 class="form__info-title">Как со мной связаться?</h2>
+            <p class="form__info-descr">Напишите мне на почту</p>
+            <a href="mailto:ilyabelevcev00@gmail.com" class="form__info-link">ilyabelevcev00@gmail.com</a>
+          </div>
+          <!-- <form class="form__feedback" id="form-feedback" action="/sendmail.php">
+            <label class="form__feedback-label" for="name">
+              Имя *
+              <input
+                placeholder="Введите свое имя"
+                title="Обязательное поле для заполнения"
+                class="form__feedback-input __req"
+                id="name"
+                name="name"
+                type="text">
+            </label>
+            <label class="form__feedback-label" for="email">
+              Эл. почта *
+              <input
+                placeholder="Добавьте эл. почту"
+                title="Обязательное поле для заполнения"
+                class="form__feedback-input __req __email"
+                id="email"
+                name="email"
+                type="mail">
+            </label>
+            <label class="form__feedback-label" for="city">
+              Город
+              <input
+                placeholder="Добавьте свой город"
+                title="Необязательное поле для заполнения"
+                class="form__feedback-input"
+                id="city"
+                name="city"
+                type="text">
+            </label>
+            <label class="form__feedback-label" for="tel">
+              Телефон
+              <input
+                placeholder="Добавьте номер телефона"
+                title="Необязательное поле для заполнения"
+                class="form__feedback-input"
+                id="tel"
+                name="tel"
+                type="tel">
+            </label>
+            <label class="form__feedback-label" for="topic">
+              Тема
+              <input
+                placeholder="Добавьте тему"
+                title="Необязательное поле для заполнения"
+                class="form__feedback-input"
+                id="topic"
+                name="topic"
+                type="text">
+            </label>
+            <label class="form__feedback-label" for="msg">
+              Сообщение *
+              <textarea
+                placeholder="Добавьте сообщение"
+                title="Обязательное поле для заполнения"
+                class="form__feedback-input __req"
+                name="msg"
+                id="msg"
+                rows="10"></textarea>
+            </label>
+            <button class="form__feedback-btn" type="submit">Отправить</button>
+          </form> -->
+        </div>
+      </section>
       @include('partials/footer.html')
    </div>
 </body>

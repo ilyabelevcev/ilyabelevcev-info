@@ -1,7 +1,7 @@
-.abilities
+.main.abilities
   margin: 100px 0px 50px 0px
   .abilities__container
-    color: #fff
+    color: $default-text-color
     @include flex-v-center
     flex-direction: column
   .abilities__title
@@ -10,14 +10,15 @@
   .abilities__list
     max-width: 70%
     .abilities__list-item
-      border-top: 1px solid #333
+      border-top: 1px solid $line-bg-color
       &:not(:last-child)
         margin-bottom: 50px
     .abilities__item-heading
-      margin-bottom: 40px
+      margin-bottom: 25px
       font-weight: 400
-      padding: 40px 0px 0px 20px
-      color: #909090
+      padding: 25px 0px 25px 20px
+      color: $default-text-color
+      border-bottom: 1px solid $line-bg-color
     .abilities__list-wrapper
       @include flex
       flex-wrap: wrap
@@ -29,7 +30,7 @@
       &:not(:nth-child(-n+2))
         margin-top: 5px
       &:hover
-        background-color: #505050
+        background-color: $abilities-color
         border-radius: 10px
         .abilities__level-icon
           &:not(:first-child)

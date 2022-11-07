@@ -42,6 +42,8 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-typograf": "^4.0.3",
     "gulp-webp": "^4.0.1",
+    "gulp-webp-html-nosvg": "^1.1.1",
+    "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
     "node-w3c-validator": "^2.0.1",
     "postcss": "^8.4.5",
@@ -51,6 +53,7 @@
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
     "typograf": "^6.14.1",
+    "webp-converter": "^2.2.3",
     "webpack": "^5.65.0",
     "webpack-stream": "^7.0.0"
   },

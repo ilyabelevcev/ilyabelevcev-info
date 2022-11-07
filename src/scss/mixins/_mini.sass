@@ -35,10 +35,8 @@ $browser-context: 16 // Default
 @function rem($pixels, $context: $browser-context)
   @return #{$pixels/$context}rem
 
-@mixin image-set($pathToImage)
+@mixin bg-image($pathToImage)
   background-image: url("#{$pathToImage}.jpg")
-  /* stylelint-disable-next-line declaration-block-no-duplicate-properties */
-  background-image: url("#{$pathToImage}.webp")
 
 @mixin footerToBottom
   display: grid

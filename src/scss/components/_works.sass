@@ -1,7 +1,7 @@
-.works
+.main.works
   margin: 100px 0px 50px 0px
   .works__container
-    color: #fff
+    color: $default-text-color
     @include flex-v-center
     flex-direction: column
   .works__title
@@ -26,7 +26,7 @@
       top: -30px
       left: 50%
       transform: translateX(-50%)
-      color: #fff
+      color: $default-text-color
       opacity: 0.4
     .works__list-item
       margin: 8px
@@ -39,7 +39,6 @@
           z-index: 0
           transform: scale(1.2)
         .works__item-description
-          // transform: translateX(0)
           z-index: 1
         .works__descr-heading
           &::after
@@ -82,7 +81,7 @@
         @include pseudo
         width: 0%
         height: 2px
-        background-color: #fff
+        background-color: $default-text-color
         border-radius: 5px
         margin: 15px 0px
         transition: 0.4s ease-in-out
@@ -104,15 +103,23 @@
       left: 0px
       height: 100%
       width: 100%
-  .works__link-more
-    display: block
-    padding: 10px 20px
-    color: #fff
-    border: 1px solid #fff
-    border-radius: 20px
+  .works__links-more
+    width: 100%
+    flex-direction: column
+    @include flex-all-center
     margin-top: 50px
-    transition: 0.2s ease-in-out
-    &:hover
-      color: #2db2ff
-      border-color: #2db2ff
-      border-radius: 0px
+    .works__link-more
+      width: 50%
+      text-align: center
+      display: block
+      padding: 10px 20px
+      color: $default-text-color
+      border: 1px solid $default-text-color
+      border-radius: 20px
+      transition: 0.2s ease-in-out
+      &:not(:first-child)
+        margin-top: 30px
+      &:hover
+        color: $active-hover-color
+        border-color: $active-hover-color
+        border-radius: 0px
