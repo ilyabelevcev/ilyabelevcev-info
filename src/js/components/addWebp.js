@@ -1,3 +1,4 @@
+// add-webp
 import vars from '../_vars';
 
 export const isWebp = () => {

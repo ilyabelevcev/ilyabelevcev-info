@@ -1,14 +1,15 @@
 .main.works
-  margin: 100px 0px 50px 0px
+  padding: $padding-section
   .works__container
     color: $default-text-color
     @include flex-v-center
     flex-direction: column
   .works__title
-    font-size: 35px
-    margin: 0 0px 30px 0px
+    font-size: $h2
+    margin: $marginH2
   .works__descr
-    font-size: 20px
+    font-size: $descr-fz
+    line-height: $descr-lh
     text-align: center
     max-width: 80%
     margin-bottom: 100px
@@ -52,20 +53,21 @@
       z-index: 1
       width: 100%
       height: 100%
-      transition: 0.2s ease-in-out
+      transition: 0.2s $transitionTimeFoo
     .works__item-description
-      display: flex
-      justify-content: space-between
-      flex-direction: column
-      padding: 20px 30px
       position: absolute
       z-index: 0
       top: 0
       left: 0
       width: 100%
       height: 100%
+      display: flex
+      justify-content: space-between
+      flex-direction: column
+      padding: 20px 30px
+      line-height: $descr-lh
       font-style: italic
-      transition: 0.4s ease-in-out
+      transition: 0.4s $transitionTimeFoo
     .works__descr-icon
       width: 50px
       height: 50px
@@ -73,8 +75,7 @@
       right: 2px
       top: 2px
     .works__descr-heading
-      font-size: 40px
-      font-weight: 500
+      font-size: $works-fz
       @include flex
       flex-direction: column
       &::after
@@ -84,17 +85,16 @@
         background-color: $default-text-color
         border-radius: 5px
         margin: 15px 0px
-        transition: 0.4s ease-in-out
+        transition: 0.4s $transitionTimeFoo
     .works__descr-text
       margin-bottom: 30px
-      transition: 0.2s ease-in-out
+      transition: 0.2s $transitionTimeFoo
       transform: translateX(-100%)
     .works__descr-tags
-      transition: 0.2s ease-in-out
+      transition: 0.2s $transitionTimeFoo
       transform: translateX(-100%)
     .works__item-link
-      z-index: 1000
-      text-indent: 200%
+      z-index: 10
       white-space: nowrap
       font-size: 0
       opacity: 0
@@ -116,7 +116,7 @@
       color: $default-text-color
       border: 1px solid $default-text-color
       border-radius: 20px
-      transition: 0.2s ease-in-out
+      transition: 0.2s $transitionTimeFoo
       &:not(:first-child)
         margin-top: 30px
       &:hover

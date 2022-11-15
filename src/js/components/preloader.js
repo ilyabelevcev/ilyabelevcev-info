@@ -1,5 +1,3 @@
-import { disableScroll } from './disable-scroll.js';
-import { enableScroll } from './enable-scroll.js';
 import vars from '../_vars';
 
 export const preloadPage = () => {

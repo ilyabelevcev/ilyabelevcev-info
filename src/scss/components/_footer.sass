@@ -3,12 +3,6 @@
   .footer__container
     @include flex-all-center
     flex-direction: column
-  // .footer__gmail
-  //   margin-top: 15px
-  //   color: #fff
-  //   transition: color 0.1s ease-in-out
-  //   @include hover
-  //       color: $active-hover-color
   .footer__socials
     margin-top: 15px
     .footer__socials-list
@@ -17,7 +11,7 @@
       @include mr(15px)
     .footer__socials-icon
       path
-        transition: fill 0.1s ease-in-out
+        transition: fill 0.1s $transitionTimeFoo
       &:hover
         path
           fill: $active-hover-color

@@ -1,12 +1,12 @@
 .main.abilities
-  margin: 100px 0px 50px 0px
+  padding: $padding-section
   .abilities__container
     color: $default-text-color
     @include flex-v-center
     flex-direction: column
   .abilities__title
-    font-size: 35px
-    margin: 0 0px 30px 0px
+    font-size: $h2
+    margin: $marginH2
   .abilities__list
     max-width: 70%
     .abilities__list-item
@@ -36,11 +36,11 @@
           &:not(:first-child)
             margin-left: 3px
     .abilities__wrapper-ability
-      font-size: 20px
+      font-size: $h4
     .abilities__wrapper-level
       @include flex-v-center
     .abilities__level-icon
       width: 19px
       height: 19px
-      transition: margin 0.2s ease-in-out
+      transition: margin 0.2s $transitionTimeFoo
 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html', {"title": "IlyaBelevcev | Сведения"})
+<body class="page__body info">
+   @include('partials/preloader.html')
+   <div class="site-container">
+      @include('partials/header.html')
+      <!-- <section class="info hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__content-title">ОБО МНЕ</h1>
+            <p class="hero__content-descr">
+              <i>Технология, значительно превосходящая по уровню известные нам, неотличима от магии. - Артур Кларк</i>
+              <a class="hero__descr-link" href="#about">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </section> -->
+      <section id="about" class="about">
+        <div class="container about__container">
+          <h2 id="#about" class="about__heading">Информация</h2>
+          <div class="about__content">
+            <ul class="about__info-list">
+              <li class="about__info-item">
+                <strong>Имя:</strong>
+                <span>Илья</span>
+              </li>
+              <li class="about__info-item">
+                <strong>Возраст:</strong>
+                <span id="age"></span>
+              </li>
+              <li class="about__info-item">
+                <strong>Сфера:</strong>
+                <span>Frontend-Development</span>
+              </li>
+              <li class="about__info-item">
+                <strong>Опыт:</strong>
+                <span id="dateExperienceYearStart"></span>
+              </li>
+            </ul>
+            <div class="about__descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti modi magnam at reiciendis eaque? Neque culpa recusandae fugiat magni quis! Itaque ut ducimus quas porro nesciunt repellat fugit architecto dicta?</div>
+          </div>
+        </div>
+      </section>
+      @include('partials/footer.html')
+   </div>
+</body>
+</html>
