@@ -72,32 +72,39 @@
             fill: $active-hover-color
   &.portfolio,&.cv
     .hero__content-descr
-      max-width: 55%
+        max-width: 55%
     .hero__content-arrow
-      color: $default-text-color
-      &::before
-        content: 'Works'
-        display: block
-        padding-bottom: 70px
-      position: absolute
-      z-index: 100
-      bottom: 0px
-      left: 50%
-      transform: translateX(-50%)
-      .hero__arrow-icon
+        &::before
+            display: block
+            padding-bottom: 70px
+        color: $default-text-color
         position: absolute
         z-index: 100
-        width: 50px
-        bottom: -3px
+        bottom: 0px
         left: 50%
         transform: translateX(-50%)
-        transition: 0.2s $transitionTimeFoo
-        svg
-          path
-            transition: fill 0.2s $transitionTimeFoo
-      &:hover
         .hero__arrow-icon
-          bottom: -10px
-          svg
+            position: absolute
+            z-index: 100
+            width: 50px
+            bottom: -3px
+            left: 50%
+            transform: translateX(-50%)
+            transition: 0.2s $transitionTimeFoo
+        svg
             path
-              fill: $active-hover-color
+                transition: fill 0.2s $transitionTimeFoo
+        &:hover
+            .hero__arrow-icon
+                bottom: -10px
+            svg
+                path
+                    fill: $active-hover-color
+  &.portfolio
+    .hero__content-arrow
+        &::before
+            content: 'Works'
+  &.cv
+    .hero__content-arrow
+        &::before
+            content: 'Resume'

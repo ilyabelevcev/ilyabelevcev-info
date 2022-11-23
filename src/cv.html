@@ -10,7 +10,7 @@
         <div class="container hero__container">
           <div class="hero__content">
             <h1 class="hero__content-title">ILYA BELEVCEV</h1>
-            <p class="hero__content-descr"><i>Front-end Developer | HTML-верстальщик</i></p>
+            <p class="hero__content-descr"><i>Тут мое резюме, мои данные, мой опыт работы и так далее. Можно ознакомиться непосредственно на сайте, или скачать в формате PDF</i></p>
             <button class="btn-reset hero__content-link" id="modalOpenSecond" data-graph-path="modal">Обо мне
               <span class="hero__link-icon">
                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
@@ -39,8 +39,46 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+            </div>
           </div>
+          <a class="hero__content-arrow" href="#resume">
+            <span class="hero__arrow-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
+            </span>
+          </a>
+        </div>
+      </section>
+      <section id="resume" class="cv resume">
+        <div class="container resume__container">
+            <h2 class="resume__title">Мое резюме</h2>
+            <p class="resume__descr">Ниже собрана информация обо мне, о моем опыте, о моих навыках</p>
+            <ul class="resume__list">
+                <li class="resume__list-item resume__list-item--main-info">
+                    <ul class="resume__data-list">
+                        <li class="resume__data-item resume__data-item--name">Белевцев Илья Игоревич</li>
+                        <li class="resume__data-item resume__data-item--sex">Мужской</li>
+                        <li id="age" class="resume__data-item resume__data-item--age"></li>
+                    </ul>
+                    <div class="resume__item-image">
+                        <img class="resume__image-img" src="./img/ilya.jpg" alt="IlyaBelevcev">
+                    </div>
+                </li>
+                <li class="resume__list-item resume__list-item--main-experience">
+                    <div class="resume__item-profession">Front-end Developer</div>
+                    <div class="resume__item-experience" id="dateExperienceYearStart"></div>
+                    <ul class="resume__list-job">
+                        <li class="resume__job-item">
+                            <img src="#" alt="Skillbox" class="resume__job-icon">
+                            <div class="resume__job-wrapper">
+                                <div class="resume__job-place"></div>
+                                <div class="resume__job-duration"></div>
+                                <div class="resume__job-responsibility"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li class="resume-list-item resume__list-item--skills"></li> -->
+            </ul>
         </div>
       </section>
       @include('partials/slider.html')

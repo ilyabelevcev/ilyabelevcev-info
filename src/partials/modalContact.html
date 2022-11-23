@@ -2,14 +2,54 @@
         <div class="graph-modal__container modal__container" id="modalContainer" role="dialog" aria-modal="true" data-graph-target="modal">
           <button class="btn-reset js-modal-close graph-modal__close modal__close" id="modalClose" aria-label="Закрыть модальное окно"></button>
           <div class="graph-modal__content modal__content">
-            <div class="modal__about">
+            <div id="modalAbout" class="modal__about">
               <div class="modal__about-content">
                 <h2 class="modal__about-heading">Обо мне</h2>
                 <p class="modal__about-descr"></p>
               </div>
             </div>
-            <div class="modal__contact">
-              <div class="modal__contact-content">Contact</div>
+            <div id="modalContact" class="modal__contact">
+              <div class="modal__contact-content">
+                <!-- Из-за проблем с PHP было принято решение пока что не использовать форму-->
+                <form class="modal__contact-form" id="form" action="/sendmail.php" autocomplete="off">
+                  <h2 class="modal__contact-heading">Давай пообщаемся.</h2>
+                  <p class="modal__contact-descr"><i>Можно о работе, а можно про отдых и развлечения!.</i></p>
+                  <label class="modal__contact-label" for="name">
+                    Имя *
+                    <input
+                      placeholder="Введите свое имя"
+                      title="Обязательное поле для заполнения"
+                      class="modal__contact-input __req"
+                      id="name"
+                      name="name"
+                      type="text"
+                      autocomplete="off">
+                  </label>
+                  <label class="modal__contact-label" for="email">
+                    Эл. почта *
+                    <input
+                      placeholder="Добавьте эл. почту"
+                      title="Обязательное поле для заполнения"
+                      class="modal__contact-input __req __email"
+                      id="email"
+                      name="email"
+                      type="mail"
+                      autocomplete="off">
+                  </label>
+                  <label class="modal__contact-label" for="msg">
+                    Сообщение *
+                    <textarea
+                      placeholder="Добавьте сообщение"
+                      title="Обязательное поле для заполнения"
+                      class="modal__contact-input __req"
+                      name="msg"
+                      id="msg"
+                      rows="6"
+                      autocomplete="off"></textarea>
+                  </label>
+                  <button class="modal__contact-btn" type="submit">Отправить</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

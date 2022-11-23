@@ -6,7 +6,7 @@
     @include('partials/modalContact.html')
     <div  class="site-container">
       @include('partials/header.html')
-      <section id="hero" class="main hero">
+      <section id="hero" class="hero">
         <div class="container hero__container">
           <div class="hero__content">
             <h1 class="hero__content-title">ILYA BELEVCEV</h1>
@@ -44,7 +44,7 @@
         </div>
       </section>
       @include('partials/slider.html')
-      <section class="main abilities">
+      <section class="abilities">
         <div class="container abilities__container">
             <h2 class="abilities__title">Умения и используемые технологии</h2>
             <ul class="abilities__list">
@@ -416,7 +416,7 @@
             </ul>
         </div>
       </section>
-      <section class="main works">
+      <section class="works">
         <div class="container works__container">
           <h2 class="works__title">Мои работы</h2>
           <p class="works__descr">Я всегда старался следить за прогрессом сфере, чтобы расти не только профессионально, но и с точки зрения понимания собственной отрасли. Это позволяет мне находить решения, стоящих передо мной задач.</p>
@@ -488,77 +488,13 @@
           </div>
         </div>
       </section>
-      <!-- Из-за проблем с PHP было принято решение пока что не использовать форму-->
-      <section class="main form" id="form">
-        <div class="container form__container">
-          <div class="form__info">
-            <h2 class="form__info-title">Как со мной связаться?</h2>
-            <p class="form__info-descr">Напишите мне на почту</p>
-            <a href="mailto:ilyabelevcev00@gmail.com" class="form__info-link">ilyabelevcev00@gmail.com</a>
+      <section class="contact">
+        <div class="container contact__container">
+          <div class="contact__info">
+            <h2 class="contact__info-title">Как со мной связаться?</h2>
+            <p class="contact__info-descr">Напишите мне на почту</p>
+            <a href="mailto:ilyabelevcev00@gmail.com" class="contact__info-link">ilyabelevcev00@gmail.com</a>
           </div>
-          <!-- <form class="form__feedback" id="form-feedback" action="/sendmail.php">
-            <label class="form__feedback-label" for="name">
-              Имя *
-              <input
-                placeholder="Введите свое имя"
-                title="Обязательное поле для заполнения"
-                class="form__feedback-input __req"
-                id="name"
-                name="name"
-                type="text">
-            </label>
-            <label class="form__feedback-label" for="email">
-              Эл. почта *
-              <input
-                placeholder="Добавьте эл. почту"
-                title="Обязательное поле для заполнения"
-                class="form__feedback-input __req __email"
-                id="email"
-                name="email"
-                type="mail">
-            </label>
-            <label class="form__feedback-label" for="city">
-              Город
-              <input
-                placeholder="Добавьте свой город"
-                title="Необязательное поле для заполнения"
-                class="form__feedback-input"
-                id="city"
-                name="city"
-                type="text">
-            </label>
-            <label class="form__feedback-label" for="tel">
-              Телефон
-              <input
-                placeholder="Добавьте номер телефона"
-                title="Необязательное поле для заполнения"
-                class="form__feedback-input"
-                id="tel"
-                name="tel"
-                type="tel">
-            </label>
-            <label class="form__feedback-label" for="topic">
-              Тема
-              <input
-                placeholder="Добавьте тему"
-                title="Необязательное поле для заполнения"
-                class="form__feedback-input"
-                id="topic"
-                name="topic"
-                type="text">
-            </label>
-            <label class="form__feedback-label" for="msg">
-              Сообщение *
-              <textarea
-                placeholder="Добавьте сообщение"
-                title="Обязательное поле для заполнения"
-                class="form__feedback-input __req"
-                name="msg"
-                id="msg"
-                rows="10"></textarea>
-            </label>
-            <button class="form__feedback-btn" type="submit">Отправить</button>
-          </form> -->
         </div>
       </section>
       @include('partials/footer.html')

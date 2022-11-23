@@ -43,7 +43,7 @@
               </ul>
             </div>
           </div>
-          <a class="hero__content-arrow" href="#">
+          <a href="#portfolio" class="hero__content-arrow">
             <span class="hero__arrow-icon">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"/></svg>
             </span>
@@ -51,7 +51,79 @@
         </div>
       </section>
       @include('partials/slider.html')
-      <section class="works">
+      <section id="portfolio" class="portfolio works">
+        <div class="container works__container">
+          <h2 class="works__title">Мое портфолио</h2>
+          <p class="works__descr">Тут показаны все мои работы, а также мой код, который я когда-либо писал.</p>
+          <ul class="works__list">
+            <li class="works__list-item">
+                <img class="works__item-img" loading="lazy" src="./img/ilyabelevcev-site.png">
+                <div class="works__item-description">
+                    <a href="/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                    <a href="https://github.com/ilyabelevcev/ilyabelevcev.github.io" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+                </div>
+              </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/evclid-site.png">
+              <div class="works__item-description">
+                <a href="https://ilyabelevcev.github.io/evclid/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                <a href="https://github.com/ilyabelevcev/evclid" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+              </div>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/stat4market-site.png">
+              <div class="works__item-description">
+                <a href="https://ilyabelevcev.github.io/stat4market_site/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                <a href="https://github.com/ilyabelevcev/stat4market_site" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+              </div>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/spacelance-site.png">
+              <div class="works__item-description">
+                <a href="https://ilyabelevcev.github.io/spacelance/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                <a href="https://github.com/ilyabelevcev/spacelance" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+              </div>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/cuda-site.png">
+              <div class="works__item-description">
+                   <a href="https://ilyabelevcev.github.io/cuda/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                   <a href="https://github.com/ilyabelevcev/cuda" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+              </div>
+            </li>
+            <li class="works__list-item">
+              <img class="works__item-img" loading="lazy" src="./img/lagoona-site.png">
+              <div class="works__item-description">
+                <a href="https://ilyabelevcev.github.io/lagoona/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                <a href="https://github.com/ilyabelevcev/lagoona" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+              </div>
+            </li>
+            <li class="works__list-item">
+                <img class="works__item-img" loading="lazy" src="./img/vue2dnd-site.png">
+                <div class="works__item-description">
+                    <a href="https://ilyabelevcev.github.io/vue_drag_and_drop/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                    <a href="https://github.com/ilyabelevcev/vue_drag_and_drop" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+                </div>
+            </li>
+            <li class="works__list-item">
+                <img class="works__item-img" loading="lazy" src="./img/vue3table-site.png">
+                <div class="works__item-description">
+                    <a href="https://ilyabelevcev.github.io/table-users/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                    <a href="https://github.com/ilyabelevcev/table-users" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+                </div>
+            </li>
+            <li class="works__list-item">
+                <img class="works__item-img" loading="lazy" src="./img/vue3posts-site.png">
+                <div class="works__item-description">
+                    <a href="https://ilyabelevcev.github.io/post_demo/" class="works__item-link" target="_blank">Перейти к просмотру сайта</a>
+                    <a href="https://github.com/ilyabelevcev/post_demo" class="works__item-link" target="_blank">Перейти к просмотру кода</a>
+                </div>
+            </li>
+          </ul>
+          <div class="works__links-more">
+            <a href="https://github.com/ilyabelevcev" target="_blank" class="works__link-more">Мой Github</a>
+          </div>
+        </div>
       </section>
       @include('partials/footer.html')
    </div>

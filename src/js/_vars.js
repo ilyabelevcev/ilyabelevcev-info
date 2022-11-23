@@ -29,6 +29,7 @@ export default {
   date: new Date(),
   // about
   myAge: document.querySelector('#age'),
-  thisYear: document.querySelector('#year'),
   dateExperienceYear: document.querySelector('#dateExperienceYearStart'),
+  // footer
+  thisYear: document.querySelector('#year'),
 }

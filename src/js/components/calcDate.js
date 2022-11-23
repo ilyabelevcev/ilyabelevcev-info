@@ -8,7 +8,7 @@ export const calcThisYear = () => {
 calcThisYear()
 
 export const calcDate = () => {
-  if (vars.pageBody.classList.contains('info')) {
+  if (vars.pageBody.classList.contains('cv')) {
     const calcMyAge = (yearOfBirth) => {
       const age = yearNow - yearOfBirth;
       const ageStr = String(age);
@@ -35,9 +35,6 @@ export const calcDate = () => {
         dateYear = `${year} лет`;
       } else {
         dateYear = 'много лет';
-      }
-      if(vars.dateExperienceYear.innerHTML == null) {
-        console.log("ОПА")
       }
       document.addEventListener('DOMContentLoaded', function() {
         vars.dateExperienceYear.innerHTML = dateYear

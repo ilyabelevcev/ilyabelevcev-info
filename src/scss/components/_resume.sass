@@ -1,0 +1,65 @@
+.resume
+    padding: $padding-section
+    .resume__container
+        color: $default-text-color
+        @include flex-v-center
+        flex-direction: column
+    .resume__title
+        font-size: $h2
+        margin: $marginH2
+    .resume__descr
+        font-size: $descr-fz
+        line-height: $descr-lh
+        text-align: center
+        max-width: 80%
+        margin-bottom: 100px
+    .resume__list
+        @include flex-v-center
+        flex-direction: column
+    .resume__list-item
+        @include flex
+        padding: 40px 200px
+        width: 100%
+        border-top: 1px solid $line-bg-color
+        &--main-info
+            align-items: center
+            justify-content: space-between
+            .resume__data-list,.resume__data-item
+                @include flex
+                align-items: flex-start
+                flex-direction: column
+            .resume__data-item
+                font-size: $h2
+                &:not(:last-child)
+                    margin-bottom: 30px
+                &--name,&--sex,&--age
+                    &::before
+                        font-size: $h3
+                        color: $default-text-color
+                        opacity: 0.4
+                        margin-bottom: 7px
+                &--name
+                    &::before
+                        content: 'ФИО:'
+                &--sex
+                    &::before
+                        content: 'Пол:'
+                &--age
+                    &::before
+                        content: 'Возраст:'
+            .resume__item-image
+                width: 35%
+                img
+                    border-radius: 20px
+        &--main-experience
+            flex-direction: column
+            align-items: flex-start
+            .resume__item-profession
+            .resume__item-experience
+            .resume__list-job
+            .resume__job-item
+            .resume__job-icon
+            .resume__job-wrapper
+            .resume__job-place
+            .resume__job-duration
+            .resume__job-responsibility

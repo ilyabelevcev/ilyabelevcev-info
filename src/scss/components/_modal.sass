@@ -1,77 +1,147 @@
 .modal
-  .modal__container
-    position: absolute
-    border-radius: 0
-    padding: 0
-    left: 50%
-    top: 50%
-    margin: 0
-    transform: translate(-50%,-50%)
-    background-color: transparent
-    width: 80%
-    box-shadow: 0px 0px 80px 10px #2db2ff15
-  .modal__close
-    z-index: 2
-    background-image: url('../img/modal-cross.svg')
-    background-repeat: no-repeat
-    background-size: 100%
-    background-position: center
-    width: 50px
-    height: 50px
-    top: 30px
-    right: 30px
-  .modal__content
-    display: flex
-    align-items: center
-    color: #e2e2e2
-  .modal__about
-    z-index: 0
-    position: relative
-    width: 50%
-    height: 85vh
-    background: url('../img/modal-bg.jpg') no-repeat center / 200%
-    background-size: 60% 60%
-    overflow: hidden
-    &::before
-      content: ''
-      position: absolute
-      z-index: 1
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      background-color: $default-bg-color
-      opacity: 0.8
+    .modal__container
+        position: absolute
+        border-radius: 0
+        padding: 0
+        left: 50%
+        top: 50%
+        margin: 0
+        transform: translate(-50%,-50%)
+        background-color: transparent
+        width: 80%
+        box-shadow: 0px 0px 80px 10px #2db2ff15
+    .modal__close
+        z-index: 2
+        background-image: url('../img/modal-cross.svg')
+        background-repeat: no-repeat
+        background-size: 100%
+        background-position: center
+        width: 3%
+        height: 5%
+        top: 5vh
+        right: 2vh
+    .modal__content
+        display: flex
+        align-items: center
+        color: #e2e2e2
+    .modal__about
+        position: relative
+        z-index: 0
+        width: 50%
+        height: 85vh
+        background-color: #f2f2f2
+        overflow: hidden
     .modal__about-content
-      position: absolute
-      z-index: 2
-      top: 0
-      bottom: 0
-      left: 0
-      right: 0
-      &::before
-        content: 'ABOUT'
         position: absolute
-        right: -30%
-        top: -5%
-        color: #333
-        font-size: 25vh
-        font-weight: 600
-
-  .modal__contact
-    position: relative
-    z-index: 0
-    width: 50%
-    height: 85vh
-    background-color: #181818
-    overflow: hidden
+        z-index: 2
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        &::before,&::after
+            content: 'About'
+            position: absolute
+            z-index: -1
+            color: rgb(170, 170, 170, 0.2)
+            font-size: 10vw
+            font-weight: 600
+        &::before
+            right: -15%
+            top: 1%
+        &::after
+            left: -10%
+            bottom: 1%
+    .modal__contact
+        position: relative
+        z-index: 0
+        width: 50%
+        height: 85vh
+        background: url('../img/modal-bg.jpg') no-repeat center / 200%
+        background-size: 60% 60%
+        overflow: hidden
+        &::before
+            content: ''
+            position: absolute
+            z-index: -1
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            background-color: $default-bg-color
+            opacity: 0.9
     .modal__contact-content
-      &::before
-        content: 'CONTACT'
+        width: 100%
+        height: 100%
         position: absolute
-        right: -50%
-        bottom: -5%
-        color: #333
-        font-size: 25vh
-        font-weight: 600
-
+        top: 0
+        left: 0
+        &::before, &::after
+            content: 'Contact'
+            position: absolute
+            z-index: -1
+            color: rgb(74, 74, 74, 0.3)
+            font-size: 10vw
+            font-weight: 600
+        &::before
+            right: -30%
+            top: 1%
+        &::after
+            left: -10%
+            bottom: 1%
+        .modal__contact-form
+            @include flex
+            flex-direction: column
+            align-items: flex-start
+            margin: 0 auto
+            padding: 5vh 0 10vh 0
+            width: 80%
+            height: 100%
+        .modal__contact-heading
+            font-size: 4vh
+            margin-bottom: 1vh
+        .modal__contact-descr
+            font-size: 2vh
+        .modal__contact-label
+            display: block
+            font-size: 2vh
+            width: 100%
+            margin-top: 3vh
+        .modal__contact-input
+            font-size: 2.5vh
+            background: transparent
+            border: none
+            border-width: 0.1vh
+            border-style: solid
+            border-color: transparent transparent $default-text-color transparent
+            color: $default-text-color
+            padding: 1.5vh 1vh
+            margin-top: 0.5vh
+            @include flex
+            width: 100%
+            transition: 0.1s $transitionTimeFoo
+            &.__error
+                border: 1px solid red
+            &::placeholder
+                color: #aaaaaa
+            &:hover
+                border-color: $active-hover-color
+            &:focus,&:active
+                border-radius: 0
+                outline: 0
+                border: 1px solid $active-hover-color
+        textarea
+            resize: none
+        .modal__contact-btn
+            font-size: 2.5vh
+            margin-top: 3vh
+            padding: 0.5vh 8vh
+            color: $default-text-color
+            border: 0.1vh solid $default-text-color
+            border-radius: 20px
+            background-color: transparent
+            cursor: pointer
+            transition: 0.2s $transitionTimeFoo
+            &:hover
+                color: $active-hover-color
+                border-color: $active-hover-color
+                border-radius: 0
