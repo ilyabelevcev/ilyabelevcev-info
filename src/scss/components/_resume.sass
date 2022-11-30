@@ -18,12 +18,21 @@
         flex-direction: column
     .resume__list-item
         @include flex
-        padding: 40px 200px
+        padding: 80px 200px
         width: 100%
         border-top: 1px solid $line-bg-color
         &--main-info
+            position: relative
             align-items: center
             justify-content: space-between
+            &::before
+                content: 'Личная информация'
+                position: absolute
+                top: -30px
+                right: 0
+                font-size: $h4
+                color: $default-text-color
+                opacity: 0.4
             .resume__data-list,.resume__data-item
                 @include flex
                 align-items: flex-start
@@ -52,14 +61,177 @@
                 img
                     border-radius: 20px
         &--main-experience
+            position: relative
             flex-direction: column
             align-items: flex-start
+            &::before
+                content: 'Опыт работы и обучение'
+                position: absolute
+                top: -30px
+                right: 0
+                font-size: $h4
+                color: $default-text-color
+                opacity: 0.4
+            .resume__item-wrapper
+                width: 100%
+                @include flex-all-sb
+                margin-bottom: 50px
             .resume__item-profession
+                position: relative
+                font-size: $h2
+                &::before
+                    content: 'Профессия'
+                    position: absolute
+                    top: -30px
+                    left: 0
+                    font-size: $h3
+                    color: $default-text-color
+                    opacity: 0.4
             .resume__item-experience
+                position: relative
+                font-size: $h2
+                &::before
+                    content: 'Общая длительность'
+                    position: absolute
+                    top: -30px
+                    left: 0
+                    font-size: $h3
+                    color: $default-text-color
+                    opacity: 0.4
             .resume__list-job
+                width: 100%
+                @include flex-all-center
+                flex-wrap: wrap
             .resume__job-item
-            .resume__job-icon
+                max-width: 45%
+                flex: 1 1 30%
+                margin: 20px
+                border-radius: 20px
+                background-color: rgba(56, 53, 255, 0.1)
+                transition: 0.4s $transitionTimeFoo
+                &:hover
+                    transform: translate(15px, -15px)
+                    box-shadow: -15px 15px 40px 5px rgba(255, 255, 255, 0.1)
+                    .resume__job-img
+                        &::before
+                            opacity: 0
+            .resume__job-img
+                height: 20vh
+                overflow: hidden
+                position: relative
+                border-top-left-radius: 20px
+                border-top-right-radius: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    z-index: 2
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background-color: $default-bg-color
+                    opacity: 0.3
+                    transition: 0.2s $transitionTimeFoo
+                &--job-1
+                    background-color: #3a35ff
+                    @include flex-all-center
+                &--job-2
+                    .resume__job-icon
+                        width: 100%
+                        height: 100%
             .resume__job-wrapper
+                padding: 60px 10px
+                @include flex-all-center
+                flex-direction: column
             .resume__job-place
-            .resume__job-duration
+                font-size: calc($h3 + 10px)
+                margin-bottom: 15px
+                text-align: center
             .resume__job-responsibility
+                color: $abilities-color
+                font-size: $h3
+                margin-bottom: 30px
+            .resume__job-duration
+                font-size: $descr-fz
+        &--skills
+            position: relative
+            flex-direction: column
+            align-items: flex-start
+            &::before
+                content: 'Ключевые навыки'
+                position: absolute
+                top: -30px
+                right: 0
+                font-size: $h4
+                color: $default-text-color
+                opacity: 0.4
+            .resume__list-skills
+                width: 100%
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+            .resume__skills-item
+                max-width: 45%
+                flex: 1 1 45%
+            .resume__item-heading
+                text-align: center
+                font-size: $h2
+                font-weight: 400
+                margin: $marginH2
+            .resume__item-list
+                width: 100%
+                display: flex
+                &--skills
+                    flex-direction: row
+                    flex-wrap: wrap
+                    .resume__item-skill
+                        text-align: center
+                        justify-content: center
+                        align-items: center
+                        padding: 14px 20px
+                        margin-bottom: 25px
+                        border: 1px solid #fff
+                        border-radius: 20px
+                        flex: 1 1 30%
+                &--lang
+                    flex-direction: column
+                    .resume__item-skill
+                        justify-content: space-between
+                        margin-bottom: 10px
+            .resume__item-skill
+                font-size: $h4
+                display: flex
+                margin-bottom: 15px
+                width: 100%
+            .resume__skill-level
+                align-self: flex-end
+                font-size: $h3
+                font-style: italic
+                color: $abilities-color
+        &--pdf
+            padding: 60px 0px
+            position: relative
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            &::before
+                content: 'Скачать резюме'
+                position: absolute
+                top: -30px
+                right: 0
+                font-size: $h4
+                color: $default-text-color
+                opacity: 0.4
+            .resume__list-descr
+                margin-bottom: 15px
+                font-size: $descr-fz
+            .resume__list-link
+                padding: 10px 50px
+                color: $default-text-color
+                border: 1px solid $default-text-color
+                border-radius: 10px
+                transition: 0.2s $transitionTimeFoo
+                &:hover
+                    color: $active-hover-color
+                    border-color: $active-hover-color
+                    border-radius: 0px

@@ -9,7 +9,21 @@
       <section id="hero" class="cv hero">
         <div class="container hero__container">
           <div class="hero__content">
-            <h1 class="hero__content-title">ILYA BELEVCEV</h1>
+            <h1 class="hero__content-title">
+                <span class="hero__title-letter">I</span>
+                <span class="hero__title-letter">L</span>
+                <span class="hero__title-letter">Y</span>
+                <span class="hero__title-letter">A</span>
+                &nbsp
+                <span class="hero__title-letter">B</span>
+                <span class="hero__title-letter">E</span>
+                <span class="hero__title-letter">L</span>
+                <span class="hero__title-letter">E</span>
+                <span class="hero__title-letter">V</span>
+                <span class="hero__title-letter">C</span>
+                <span class="hero__title-letter">E</span>
+                <span class="hero__title-letter">V</span>
+            </h1>
             <p class="hero__content-descr"><i>Тут мое резюме, мои данные, мой опыт работы и так далее. Можно ознакомиться непосредственно на сайте, или скачать в формате PDF</i></p>
             <button class="btn-reset hero__content-link" id="modalOpenSecond" data-graph-path="modal">Обо мне
               <span class="hero__link-icon">
@@ -64,20 +78,70 @@
                     </div>
                 </li>
                 <li class="resume__list-item resume__list-item--main-experience">
-                    <div class="resume__item-profession">Front-end Developer</div>
-                    <div class="resume__item-experience" id="dateExperienceYearStart"></div>
+                    <div class="resume__item-wrapper">
+                        <div class="resume__item-profession">Front-end Developer</div>
+                        <div class="resume__item-experience" id="dateExperienceYearStart"></div>
+                    </div>
                     <ul class="resume__list-job">
                         <li class="resume__job-item">
-                            <img src="#" alt="Skillbox" class="resume__job-icon">
+                            <div class="resume__job-img resume__job-img--job-1">
+                                <img src="./img/skillbox-prev.svg" alt="Skillbox" class="resume__job-icon">
+                            </div>
                             <div class="resume__job-wrapper">
-                                <div class="resume__job-place"></div>
-                                <div class="resume__job-duration"></div>
-                                <div class="resume__job-responsibility"></div>
+                                <div class="resume__job-place">SkillBox - курс обучения</div>
+                                <div class="resume__job-responsibility">Front-end Developer</div>
+                                <div class="resume__job-duration">ноябрь 2021 - ноябрь 2022</div>
+                            </div>
+                        </li>
+                        <li class="resume__job-item">
+                            <div class="resume__job-img resume__job-img--job-2">
+                                <img src="./img/freelance-prev.jpg" alt="Freelance" class="resume__job-icon">
+                            </div>
+                            <div class="resume__job-wrapper">
+                                <div class="resume__job-place">Фриланс</div>
+                                <div class="resume__job-responsibility">Front-end Developer</div>
+                                <div class="resume__job-duration">май 2022 - по н.в.</div>
                             </div>
                         </li>
                     </ul>
                 </li>
-                <!-- <li class="resume-list-item resume__list-item--skills"></li> -->
+                <li class="resume__list-item resume__list-item--skills">
+                    <ul class="resume__list-skills">
+                        <li class="resume__skills-item">
+                            <h2 class="resume__item-heading">Навыки</h2>
+                            <ul class="resume__item-list resume__item-list--skills">
+                                <li class="resume__item-skill">HTML</li>
+                                <li class="resume__item-skill">PUG</li>
+                                <li class="resume__item-skill">CSS</li>
+                                <li class="resume__item-skill">Sass</li>
+                                <li class="resume__item-skill">JavaScript</li>
+                                <li class="resume__item-skill">Vue.js</li>
+                                <li class="resume__item-skill">Gulp</li>
+                                <li class="resume__item-skill">SCSS</li>
+                                <li class="resume__item-skill">Github</li>
+                                <li class="resume__item-skill">Git</li>
+                                <li class="resume__item-skill">JQuery</li>
+                                <li class="resume__item-skill">БЭМ</li>
+                                <li class="resume__item-skill">Обучаемость</li>
+                                <li class="resume__item-skill">Работа в команде</li>
+                                <li class="resume__item-skill">Коммуникамельность</li>
+                                <li class="resume__item-skill">Легко воспринимаю критику</li>
+                                <li class="resume__item-skill">Поиск ответов на сложные вопросы</li>
+                            </ul>
+                        </li>
+                        <li class="resume__skills-item">
+                            <h2 class="resume__item-heading">Языки</h2>
+                            <ul class="resume__item-list resume__item-list--lang">
+                                <li class="resume__item-skill">Русский <span class="resume__skill-level">Родной</span></li>
+                                <li class="resume__item-skill">Английский <span class="resume__skill-level">Элементарный A2</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="resume__list-item resume__list-item--pdf">
+                    <!-- <div class="resume__list-descr">По клику на кнопку ниже можно скачать мое резюме в формате PDF</div> -->
+                    <a href="./img/resumePDF.pdf" download class="resume__list-link">Скачать резюме</a>
+                </li>
             </ul>
         </div>
       </section>

@@ -38,6 +38,8 @@
         bottom: 0
         left: 0
         right: 0
+        overflow-y: scroll
+        overflow-x: hidden
         &::before,&::after
             content: 'About'
             position: absolute
@@ -51,6 +53,42 @@
         &::after
             left: -10%
             bottom: 1%
+        &::-webkit-scrollbar //1 - скроллбар
+                width: 5px
+                background-color: transparent
+        &::-webkit-scrollbar-thumb // 5 - ползунок */
+            border-radius: 20px
+            background-color: #2db2ff
+        .modal__about-wrapper
+            @include flex
+            align-items: flex-start
+            flex-direction: column
+            margin: 0 auto
+            padding-top: 5vh
+            width: 80%
+            height: 100%
+            color: $default-bg-color
+        .modal__about-heading
+            font-size: 4vh
+            margin-bottom: 2vh
+        .modal__about-descr
+            font-size: 2.5vh
+            line-height: 1.5
+            margin-bottom: 3vh
+        .modal__about-list
+            align-self: center
+            @include flex-v-center
+            padding-bottom: 3vh
+        .modal__about-item
+            @include mr(3vh)
+            width: 4vh
+        .modal__about-icon
+            width: 100%
+            path
+                transition: fill 0.1s $transitionTimeFoo
+            &:hover
+                path
+                    fill: $active-hover-color
     .modal__contact
         position: relative
         z-index: 0

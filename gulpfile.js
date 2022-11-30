@@ -224,7 +224,7 @@ const resources = () => {
 }
 
 const images = () => {
-  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg,gif}`])
+  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg,gif,pdf}`])
     .pipe(gulpif(isProd, image([
       image.mozjpeg({
         quality: 80,
@@ -242,12 +242,6 @@ const webpImages = () => {
     .pipe(webp())
     .pipe(dest(paths.buildImgFolder))
 };
-
-// const avifImages = () => {
-//   return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`])
-//     .pipe(avif())
-//     .pipe(dest(paths.buildImgFolder))
-// };
 
 const htmlInclude = () => {
   return src([`${srcFolder}/*.html`])
@@ -275,13 +269,13 @@ const watchFiles = () => {
   watch(`${paths.srcPartialsFolder}/*.html`, htmlInclude);
   watch(`${srcFolder}/*.html`, htmlInclude);
   watch(`${paths.resourcesFolder}/**`, resources);
-  watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg,gif}`, images);
+  watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg,gif,pdf}`, images);
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages);
   watch(paths.srcSvg, svgSprites);
 }
 
 const cache = () => {
-  return src(`${buildFolder}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2,gif}`, {
+  return src(`${buildFolder}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2,gif,pdf}`, {
       base: buildFolder
     })
     .pipe(rev())
