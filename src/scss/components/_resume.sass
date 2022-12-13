@@ -184,15 +184,20 @@
                 &--skills
                     flex-direction: row
                     flex-wrap: wrap
+                    margin-top: -10px
                     .resume__item-skill
+                        cursor: pointer
                         text-align: center
                         justify-content: center
                         align-items: center
                         padding: 14px 20px
-                        margin-bottom: 25px
-                        border: 1px solid #fff
-                        border-radius: 20px
+                        margin: 10px
+                        border: 1px solid transparent
                         flex: 1 1 30%
+                        transition: 0.1s $transitionTimeFoo
+                        &:hover
+                            color: $active-hover-color
+                            border-color: $active-hover-color
                 &--lang
                     flex-direction: column
                     .resume__item-skill
@@ -201,7 +206,6 @@
             .resume__item-skill
                 font-size: $h4
                 display: flex
-                margin-bottom: 15px
                 width: 100%
             .resume__skill-level
                 align-self: flex-end

@@ -1,0 +1,634 @@
+@media (max-width: 1699px)
+    $title: 50px
+    $descr-fz: 16px
+    $descr-lh: 1.2
+    .hero
+        .hero__content
+            .hero__content-title
+                font-size: $title
+            .hero__content-descr
+                font-size: $descr-fz
+                line-height: $descr-lh
+    .works
+        .works__list
+            .works__descr-icon
+                width: 25px
+                height: 25px
+            &::before
+                display: none
+        &.portfolio
+            .works__list
+                justify-content: center
+                .works__list-item
+                    flex: 1 1 45%
+                    max-width: 50%
+    .resume
+        .resume__list-item
+            padding-left: 50px
+            padding-right: 50px
+
+@media (max-width: 1199px)
+    .header
+        .header__nav
+            .header__nav-item
+                font-size: 16px
+                @include mr(25px)
+    .hero
+        .hero__content
+            .hero__content-socials
+                .hero__socials-item
+                    width: 25px
+                    @include mb(10px)
+    .abilities
+        .abilities__list
+            max-width: 100%
+    .resume
+        .resume__list-item
+            padding: 60px 0px
+            &--skills
+                .resume__list-skills
+                    flex-direction: column
+                    .resume__skills-item
+                        max-width: 100%
+                        flex: 1 1 100%
+                        @include mb(20px)
+
+@media (max-height: 500px) and (max-width: 991px)
+    $h1: 30px
+    $h2: 25px
+    $h3: 12px
+    $h4: 15px
+    $descr-fz: 14px
+    $descr-lh: 1.2
+    $padding-section: 30px 0px
+    .btn
+        font-size: 12px !important
+        padding-top: 5px !important
+        padding-bottom: 5px !important
+    .header
+        .header__logo
+            .header__logo-name
+                font-size: 18px
+        .header__nav
+            .header__nav-item
+                font-size: 14px
+                @include mr(15px)
+    .hero
+        .hero__container
+            height: 99vh
+        .hero__content
+            top: 60%
+            .hero__content-title
+                font-size: $h1
+                margin-bottom: 2px
+            .hero__content-socials
+                display: none
+        &.portfolio,&.cv
+            .hero__content-descr
+                font-size: $descr-fz
+                max-width: 100%
+            .hero__content-arrow
+                &::before
+                    font-size: 12px
+                    padding-bottom: 10vh
+                .hero__arrow-icon
+                    width: 20px
+    .slider
+        .slider__swiper
+            height: 99vh
+    .abilities
+        padding: $padding-section
+        .abilities__title
+            font-size: $h2
+        .abilities__list
+            .abilities__item-heading
+                font-size: $h3
+            .abilities__wrapper-ability
+                font-size: $h4
+            .abilities__level-icon
+                width: 15px
+                height: 15px
+    .works
+        padding: $padding-section
+        .works__title
+            font-size: $h2
+        .works__descr
+            font-size: $descr-fz
+            line-height: $descr-lh
+            margin-bottom: 30px
+        .works__list
+            .works__list-item
+                margin: 3px
+        &.portfolio
+            .works__list
+                .works__list-item
+                    margin: 3px
+                    max-width: 80%
+                    flex: 1 1 100%
+    .email
+        padding: $padding-section
+        .email__container
+            padding: 100px 0px
+        .email__info
+            .email__info-title
+                text-align: center
+                font-size: $h2
+            .email__info-link
+                font-size: 25px
+    .resume
+        padding: $padding-section
+        .resume__title
+            font-size: $h2
+        .resume__descr
+            font-size: $descr-fz
+            max-width: 100%
+            margin-bottom: 50px
+        .resume__list-item
+            &::before
+                font-size: $h4
+                top: -6vh
+            &--main-info
+                .resume__data-item
+                    font-size: $h2
+                    &:not(:last-child)
+                        margin-bottom: 8px
+                .resume__item-image
+                    width: 45%
+            &--main-experience
+                .resume__item-profession,.resume__item-experience
+                    font-size: calc($h2 - 3px)
+                    &::before
+                        top: -6vh
+                        font-size: $h3
+                .resume__job-wrapper
+                    padding: 30px
+                .resume__job-place
+                    font-size: calc($h3 + 5px)
+                .resume__job-responsibility
+                    font-size: $h3
+                    margin-bottom: 15px
+                .resume__job-duration
+                    font-size: $descr-fz
+            &--skills
+                .resume__item-heading
+                    font-size: $h2
+                    padding-left: 2vw
+                .resume__item-skill
+                    font-size: $h4
+                .resume__skill-level
+                    font-size: $h3
+            &--pdf
+                padding: 20px 0px
+    .footer
+        padding: 15px 0px
+        .footer__socials
+            .footer__socials-item:not(:last-child)
+                @include mr(10px)
+            .footer__socials-link
+                svg
+                    width: 16px
+        .footer__legal
+            font-size: $descr-fz
+            margin-top: 10px
+
+@media (min-height: 500px) and (max-width: 991px)
+    $h1: 30px
+    $h2: 25px
+    $h3: 12px
+    $h4: 15px
+    $descr-fz: 14px
+    $descr-lh: 1.2
+    $padding-section: 30px 0px
+    .btn
+        font-size: 12px !important
+        padding-top: 5px !important
+        padding-bottom: 5px !important
+    .header
+        .header__logo
+            .header__logo-name
+                font-size: 18px
+        .header__nav
+            .header__nav-item
+                font-size: $h3
+                @include mr(15px)
+    .hero
+        .hero__container
+            height: 80vh
+        .hero__content
+            top: 60%
+            .hero__content-title
+                font-size: $h1
+                margin-bottom: 2px
+            .hero__content-socials
+                display: none
+        &.portfolio,&.cv,&.contact
+            .hero__content-descr
+                font-size: $descr-fz
+                max-width: 100%
+            .hero__content-arrow
+                &::before
+                    font-size: 12px
+                    padding-bottom: 10vh
+                .hero__arrow-icon
+                    width: 20px
+    .slider
+        .slider__swiper,.slider__swiper-img
+            height: 80vh
+    .abilities
+        padding: $padding-section
+        .abilities__title
+            font-size: $h2
+        .abilities__list
+            .abilities__item-heading
+                font-size: $h3
+            .abilities__wrapper-ability
+                font-size: $h4
+            .abilities__level-icon
+                width: 15px
+                height: 15px
+    .works
+        padding: $padding-section
+        .works__title
+            font-size: $h2
+        .works__descr
+            font-size: $descr-fz
+            line-height: $descr-lh
+            margin-bottom: 30px
+        .works__list
+            .works__list-item
+                margin: 3px
+        &.portfolio
+            .works__list
+                .works__list-item
+                    margin: 3px
+                    max-width: 80%
+                    flex: 1 1 100%
+    .email
+        padding: $padding-section
+        .email__container
+            padding: 100px 0px
+        .email__info
+            .email__info-title
+                text-align: center
+                font-size: $h2
+            .email__info-link
+                font-size: 25px
+    .resume
+        padding: $padding-section
+        .resume__title
+            font-size: $h2
+        .resume__descr
+            font-size: $descr-fz
+            max-width: 100%
+            margin-bottom: 50px
+        .resume__list-item
+            &::before
+                top: -4vh
+                font-size: $h4
+            &--main-info
+                .resume__data-item
+                    font-size: $h2
+                    @include mb(8px)
+                .resume__item-image
+                    width: 45%
+            &--main-experience
+                .resume__item-profession,.resume__item-experience
+                    font-size: calc($h2 - 3px)
+                    &::before
+                        top: -4vh
+                        font-size: $h3
+                .resume__job-wrapper
+                    padding: 30px
+                .resume__job-place
+                    font-size: calc($h3 + 5px)
+                .resume__job-responsibility
+                    font-size: $h3
+                    margin-bottom: 15px
+                .resume__job-duration
+                    font-size: $descr-fz
+            &--skills
+                .resume__item-heading
+                    font-size: $h2
+                    padding-left: 2vw
+                .resume__item-skill
+                    font-size: $h4
+                .resume__skill-level
+                    font-size: $h3
+            &--pdf
+                padding: 20px 0px
+    .footer
+        padding: 15px 0px
+        .footer__socials
+            .footer__socials-item:not(:last-child)
+                @include mr(10px)
+            .footer__socials-link
+                svg
+                    width: 16px
+        .footer__legal
+            font-size: $descr-fz
+            margin-top: 10px
+
+@media (max-height: 380px) and (max-width: 767px)
+    $h2: 18px
+    $h4: 12px
+    $descr-fz: 14px
+    $descr-lh: 1
+    .header
+        .header__logo
+            position: relative
+            z-index: 1
+            margin-right: auto
+        .burger
+            display: block
+            margin-left: 30px
+        .header__nav
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            flex-direction: column
+            width: 100%
+            height: 100vh
+            position: absolute
+            top: 0
+            left: -101%
+            background-color: #000000e6
+            transition: 0.2s $transitionTimeFoo
+            &.active
+                left: 0
+            .header__nav-list
+                flex-direction: column
+            .header__nav-item
+                width: 100vw
+                @include mr(0px)
+                margin-bottom: 20px
+                font-size: 25px
+                text-align: center
+                &:last-child
+                    display: none
+            .header__socials-item
+                width: 25px
+            .header__socials-list
+                display: flex
+                margin-bottom: 20px
+        .header__contact
+            display: block
+            font-size: $h3
+    .abilities
+        .abilities__list
+            .abilities__wrapper-ability
+                font-size: $h4
+    .works
+        .works__list
+            .works__list-item
+                flex: 1 1 100%
+                max-width: 100%
+        &.portfolio
+            .works__list
+                .works__list-item
+                    max-width: 100%
+                    margin: 5px
+    .email
+        .email__container
+            padding: 40px 0px
+        .email__info
+            .email__info-title
+                font-size: $h2
+            .email__info-descr
+                font-size: $descr-fz
+                line-height: $descr-lh
+            .email__info-link
+                font-size: 18px
+    .resume
+        .resume__list-item
+            &--main-info
+                .resume__data-item
+                    font-size: $h2
+                    &--name,&--sex,&--age
+                        &::before
+                            font-size: $h4
+            &--main-experience
+                .resume__list-job
+                    flex-direction: column
+                    align-items: stretch
+                .resume__job-item
+                    margin: 0
+                    flex: 1 1 100%
+                    max-width: 100%
+                    @include mb(25px)
+            &--skills
+                .resume__item-list
+                    &--skills
+                        .resume__item-skill
+                            margin: 4px
+    .modal
+        .modal__about-content
+            .modal__about-descr
+                font-size: 2vw
+
+@media (min-height: 380px) and (max-width: 767px)
+    $h2: 18px
+    $h4: 12px
+    $descr-fz: 14px
+    $descr-lh: 1
+    .header
+        .header__logo
+            position: relative
+            z-index: 1
+            margin-right: auto
+        .burger
+            display: block
+            margin-left: 30px
+        .header__nav
+            @include flex-all-center
+            flex-direction: column
+            width: 100%
+            height: 100vh
+            position: absolute
+            top: 0
+            left: -101%
+            background-color: #000000e6
+            transition: 0.2s $transitionTimeFoo
+            &.active
+                left: 0
+            .header__nav-list
+                flex-direction: column
+                margin-bottom: 30px
+            .header__nav-item
+                width: 100vw
+                @include mr(0px)
+                @include mb(20px)
+                font-size: 25px
+                text-align: center
+                &:last-child
+                    display: none
+            .header__socials-item
+                width: 25px
+            .header__socials-list
+                display: flex
+        .header__contact
+            display: block
+            font-size: $h3
+    .abilities
+        .abilities__list
+            .abilities__wrapper-ability
+                font-size: $h4
+            .abilities__level-icon
+                width: 12px
+                height: 12px
+    .works
+        .works__list
+            .works__list-item
+                flex: 1 1 100%
+                max-width: 100%
+        &.portfolio
+            .works__list
+                .works__list-item
+                    max-width: 100%
+                    margin: 5px
+    .email
+        .email__container
+            padding: 40px 0px
+        .email__info
+            .email__info-title
+                font-size: $h2
+            .email__info-descr
+                font-size: $descr-fz
+                line-height: $descr-lh
+            .email__info-link
+                font-size: 18px
+    .resume
+        .resume__list-item
+            &--main-info
+                .resume__data-item
+                    font-size: $h2
+                    &--name,&--sex,&--age
+                        &::before
+                            font-size: $h4
+            &--main-experience
+                .resume__list-job
+                    flex-direction: column
+                    align-items: stretch
+                .resume__job-item
+                    margin: 0
+                    flex: 1 1 100%
+                    max-width: 100%
+                    @include mb(25px)
+            &--skills
+                .resume__item-list
+                    &--skills
+                        .resume__item-skill
+                            margin: 4px
+    .modal
+        .modal__about-content
+            .modal__about-descr
+                font-size: 2vw
+
+@media (max-width: 575px)
+    $h1: 24px
+    $h2: 18px
+    $h3: 10px
+    $h4: 12px
+    $descr-fz: 11px
+    // $padding-section: 30px 0px
+    .header
+        .header__nav
+            .header__nav-item
+                &:nth-child(4)
+                    display: block
+        .header__contact
+            display: none
+    .hero
+        .hero__content
+            align-items: center
+            .hero__content-title
+                font-size: $h1
+                margin-bottom: 10px
+            .hero__content-descr
+                text-align: center
+                font-size: $descr-fz
+            .hero__content-link
+                visibility: hidden
+                position: absolute
+                left: -100%
+        &.portfolio,&.cv,&.contact
+            .hero__content-descr
+                text-align: center
+                font-size: $descr-fz
+            .hero__content-arrow
+                &::before
+                    padding-bottom: 6vh
+    .abilities
+        .abilities__container
+            align-items: normal
+        .abilities__title
+            text-align: center
+            font-size: $h2
+        .abilities__list
+            .abilities__item-heading
+                text-align: center
+                padding: 10px 0px
+            .abilities__list-wrapper
+                flex-wrap: nowrap
+                flex-direction: column
+            .abilities__wrapper-item
+                width: 100%
+    .works
+        .works__title
+            text-align: center
+            font-size: $h2
+        .works__descr
+            max-width: 100%
+            font-size: $descr-fz
+        .works__links-more
+            .works__link-more
+                width: 100%
+    .email
+        .email__info
+            max-width: 100%
+            .email__info-descr
+                &::after,&::before
+                    height: 1px
+                    margin: 15px 0px
+    .resume
+        .resume__title
+            font-size: $h2
+        .resume__descr
+            font-size: $descr-fz
+        .resume__list-item
+            padding-top: 30px
+            &::before
+                font-size: $h4
+            &--main-info
+                flex-direction: column-reverse
+                .resume__data-list,.resume__data-item
+                    align-items: center
+                .resume__item-image
+                    width: 90%
+                    margin-bottom: 30px
+            &--main-experience
+                .resume__item-wrapper
+                    flex-direction: column
+                    margin-bottom: 20px
+                .resume__item-profession,.resume__item-experience
+                    font-size: $h2
+                    @include flex-v-center
+                    flex-direction: column
+                    &::before
+                        position: static
+                        margin-bottom: 3px
+                .resume__item-profession
+                    margin-bottom: 20px
+                .resume__job-item
+                    &:hover
+                        transform: none
+            &--skills
+                .resume__item-heading
+                    font-size: $h2
+                    padding: 0
+                .resume__item-skill
+                    font-size: $h4
+                .resume__item-list
+                    &--skills
+                        .resume__item-skill
+                            padding: 10px 0px
+                            flex: 1 1 33%

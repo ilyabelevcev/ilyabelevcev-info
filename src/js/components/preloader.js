@@ -7,7 +7,7 @@ export const preloadPage = () => {
     setInterval(() => {
         vars.preloader.classList.add('preloader-hidden');
         vars.pageBody.classList.remove('dis-scroll');
-    }, 1500);
+    }, 1000);
     setInterval(() => {
       vars.pageBody.classList.remove('dis-scroll');
     }, 1000)

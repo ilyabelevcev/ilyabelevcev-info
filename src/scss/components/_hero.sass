@@ -20,19 +20,6 @@
       position: relative
       @include flex-v-center
       font-size: $title
-      &::after
-        content: 'Нахожусь в поиске постоянного места работы'
-        position: absolute
-        bottom: -15px
-        left: 0
-        font-size: $h4
-        color: $default-text-color
-        opacity: 0
-        font-weight: 300
-        transition: 0.2s $transitionTimeFoo
-      &:hover
-        &::after
-            opacity: 0.6
       .hero__title-letter
         cursor: default
         transition: 0.2s $transitionTimeFoo
@@ -93,7 +80,7 @@
         &:hover
           path
             fill: $active-hover-color
-  &.portfolio,&.cv
+  &.portfolio,&.cv,&.contact
     .hero__content-descr
         max-width: 55%
     .hero__content-arrow
@@ -102,7 +89,7 @@
             padding-bottom: 70px
         color: $default-text-color
         position: absolute
-        z-index: 100
+        z-index: 2
         bottom: 0px
         left: 50%
         transform: translateX(-50%)
@@ -131,3 +118,7 @@
     .hero__content-arrow
         &::before
             content: 'Resume'
+  &.contact
+    .hero__content-arrow
+        &::before
+            content: 'About'

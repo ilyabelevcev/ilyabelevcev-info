@@ -41,12 +41,7 @@
           transform: scale(1.2)
         .works__item-description
           z-index: 1
-        .works__descr-heading
-          &::after
-            width: 100%
-        .works__descr-text
-          transform: translateX(0)
-        .works__descr-tags
+        .works__descr-link
           transform: translateX(0)
     .works__item-img
       position: relative
@@ -74,23 +69,7 @@
       position: absolute
       right: 2px
       top: 2px
-    .works__descr-heading
-      font-size: $works-fz
-      @include flex
-      flex-direction: column
-      &::after
-        @include pseudo
-        width: 0%
-        height: 2px
-        background-color: $default-text-color
-        border-radius: 5px
-        margin: 15px 0px
-        transition: 0.4s $transitionTimeFoo
-    .works__descr-text
-      margin-bottom: 30px
-      transition: 0.2s $transitionTimeFoo
-      transform: translateX(-100%)
-    .works__descr-tags
+    .works__descr-link
       transition: 0.2s $transitionTimeFoo
       transform: translateX(-100%)
     .works__item-link

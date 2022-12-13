@@ -16,19 +16,43 @@
       text-transform: uppercase
       margin-left: 15px
   .header__nav
+    margin-left: auto
     .header__nav-list
       @include flex-v-center
     .header__nav-item
-      @include mr(50px)
+        @include mr(50px)
+        &:nth-child(4)
+            display: none
     .header__nav-link
       font-weight: 500
       color: $default-text-color
       letter-spacing: 2px
       transition: color 0.1s $transitionTimeFoo
       &.active
-        color: $active-hover-color
+        color: #2db2ff
       &:hover
         color: $active-hover-color
+    .header__socials-list
+        display: none
+        align-items: center
+        justify-content: center
+    .header__socials-item
+        @include mr(15px)
+        width: 35px
+    .header__socials-icon
+        width: 100%
+        path
+            transition: fill 0.1s $transitionTimeFoo
+        &:hover
+            path
+                fill: $active-hover-color
+  .header__contact
+    font-weight: 500
+    color: $default-text-color
+    letter-spacing: 2px
+    transition: color 0.1s $transitionTimeFoo
+    display: none
   .burger
+    @include burger
     color: $default-text-color
     display: none

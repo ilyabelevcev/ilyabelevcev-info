@@ -19,9 +19,12 @@ export default {
   pageBody: document.querySelector('body'),
   // header
   header: document.querySelector('#header'),
+  menu: document.querySelector('#menu'),
+  burger: document.querySelector('#burger'),
   mainActive: document.querySelector('#main-link'),
   portfolioActive: document.querySelector('#portfolio-link'),
   cvActive: document.querySelector('#cv-link'),
+  contactActive: document.querySelector('#contact-link'),
   links: document.querySelectorAll('.header__nav-link'),
   // hero
   hero: document.querySelector('#hero'),

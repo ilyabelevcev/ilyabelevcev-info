@@ -1,5 +1,5 @@
-.contact
-  margin: $padding-section
+.email
+  padding: $padding-section
   margin-bottom: 0px
   position: relative
   z-index: 0
@@ -19,18 +19,18 @@
     z-index: 1
     background-color: $default-bg-color
     opacity: 0.6
-  .contact__container
+  .email__container
     @include flex-all-center
     position: relative
     z-index: 2
     padding: 200px 0px
-  .contact__info
+  .email__info
     max-width: 49%
     @include flex-v-center
     flex-direction: column
-    .contact__info-title
+    .email__info-title
       font-size: $h2
-    .contact__info-descr
+    .email__info-descr
       @include flex-v-center
       flex-direction: column
       font-size: $descr-fz
@@ -41,7 +41,7 @@
         width: 120%
         height: 2px
         background-color: $line-bg-color
-    .contact__info-link
+    .email__info-link
       font-size: 35px
       color: $default-text-color
       transition: 0.1s $transitionTimeFoo
