@@ -6,10 +6,3 @@
 README.md
 package-lock.json
 
-# PHP
-/src/resources/PHPMailer
-/src/resources/sendmail.php
-
-# validate
-/src/js/components/validate.js
-

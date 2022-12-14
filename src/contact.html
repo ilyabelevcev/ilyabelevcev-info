@@ -60,10 +60,52 @@
       </section>
       @include('partials/slider.html')
       <section id="about" class="about">
-        <div class="container about__container"></div>
+        <div class="container about__container">
+            <h2 class="about__heading">Обо мне</h2>
+            <p class="about__descr">Меня зовут Илья, я Frontend-Разработчик.<br>Я постоянно развиваюсь и имею большой интерес ко всему, что связано с технологиями. Сферу Frontend`а изучаю с августа 2021 года, научился верстать сайты используя HTML(PUG), CSS(SCSS,Sass). Практически всегда изучаю что-то новое, ведь время идет, всё меняется и технологии тоже. Ещё использую Vue.js. Знаю как работать со такими сборщиками как Webpack и Gulp. Использую GIT и GITHUB.</p>
+        </div>
       </section>
       <section class="form">
-        <div class="container form__container"></div>
+        <div class="container form__container">
+            <form class="form__contact" id="form" action="/sendmail.php" autocomplete="off">
+                <h2 class="form__contact-heading">Давай пообщаемся.</h2>
+                <p class="form__contact-descr"><i>Можно о работе, а можно про отдых и развлечения!.</i></p>
+                <label class="form__contact-label" for="name">
+                    Имя *
+                    <input
+                        placeholder="Введите свое имя"
+                        title="Обязательное поле для заполнения"
+                        class="form__contact-input __req"
+                        id="name"
+                        name="name"
+                        type="text"
+                        autocomplete="off">
+                </label>
+                <label class="form__contact-label" for="email">
+                    Эл. почта *
+                    <input
+                        placeholder="Добавьте эл. почту"
+                        title="Обязательное поле для заполнения"
+                        class="form__contact-input __req __email"
+                        id="email"
+                        name="email"
+                        type="mail"
+                        autocomplete="off">
+                </label>
+                <label class="form__contact-label" for="msg">
+                    Сообщение *
+                    <textarea
+                        placeholder="Добавьте сообщение"
+                        title="Обязательное поле для заполнения"
+                        class="form__contact-input __req"
+                        name="msg"
+                        id="msg"
+                        rows="6"
+                        autocomplete="off"></textarea>
+                </label>
+                <button class="btn-reset form__contact-btn btn" type="submit">Отправить</button>
+            </form>
+        </div>
       </section>
       @include('partials/footer.html')
    </div>
