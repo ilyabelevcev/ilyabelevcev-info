@@ -1,5 +1,5 @@
 import { mobileCheck } from "./components/mobile-check.js";
-// import { validate } from "./components/validate.js"
+import { validate } from "./components/validate.js"
 import { activatedPage } from './components/linkActive.js'
 import { preloadPage } from './components/preloader.js'
 import { heroSlider } from './components/heroSlider.js'
