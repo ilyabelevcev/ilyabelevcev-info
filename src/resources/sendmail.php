@@ -12,9 +12,6 @@
 
    $name = $_POST['name'];
    $email = $_POST['email'];
-   $city = $_POST['city'];
-   $tel = $_POST['tel'];
-   $topic = $_POST['topic'];
    $msg = $_POST['msg'];
 
    // От кого
@@ -33,15 +30,6 @@
    }
    if(trim(!empty($email))){
       $body.='<p><strong>Эл. почта:</strong> '.$email.'</p>';
-   }
-   if(trim(!empty($city))){
-      $body.='<p><strong>Город:</strong> '.$city.'</p>';
-   }
-   if(trim(!empty($tel))){
-      $body.='<p><strong>Телефон:</strong> '.$tel.'</p>';
-   }
-   if(trim(!empty($topic))){
-      $body.='<p><strong>Тема:</strong> '.$topic.'</p>';
    }
    if(trim(!empty($msg))){
       $body.='<p><strong>Сообщение:</strong> '.$msg.'</p>';
