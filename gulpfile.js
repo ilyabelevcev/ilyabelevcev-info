@@ -40,6 +40,7 @@ const rootFolder = path.basename(path.resolve());
 const srcFolder = './src';
 const buildFolder = './dist';
 const paths = {
+  srcPortfolio: `${srcFolder}/portfolio/`,
   srcSvg: `${srcFolder}/img/svg/**.svg`,
   srcImgFolder: `${srcFolder}/img`,
   buildImgFolder: `${buildFolder}/img`,
@@ -327,7 +328,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, watchFiles);
 
-exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, svgSprites)
+exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages,  svgSprites)
 
 exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, webpImages, svgSprites, htmlMinify);
 
