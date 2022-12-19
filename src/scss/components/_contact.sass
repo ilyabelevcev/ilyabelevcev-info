@@ -27,22 +27,20 @@
 .form
     padding: $padding-section
     .form__container
-        color: $default-text-color
-        @include flex-v-center
-        flex-direction: column
+        color: $abilities-color // white-default
+        @include flex-all-center
+        // @include flex-v-center // this
+        // flex-direction: column // this
         position: relative
-        background-color: #00000076 // delete
-        .err
-            // position: absolute
-            width: 100%
-            height: 300px // 100%
-            // top: 0
-            // left: 0
-            color: $abilities-color
-            @include flex-all-center
-            font-size: 3vw !important
-            text-align: center
-            padding: 0px 50px
+        background-color: #000000 // delete
+        width: 100%
+        height: 300px
+        color: $abilities-color
+        font-size: 3vw !important
+        text-align: center
+        padding: 0px 50px
+        .form__link
+
         &::before,&::after
             content: 'Contact'
             position: absolute
