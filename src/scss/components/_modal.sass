@@ -113,6 +113,18 @@
         position: absolute
         top: 0
         left: 0
+        .err
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            background-color: transparent
+            color: $abilities-color
+            @include flex-all-center
+            font-size: 2vw !important
+            text-align: center
+            padding: 0px 20px
         &::before, &::after
             content: 'Contact'
             position: absolute
