@@ -14,13 +14,10 @@
    $email = $_POST['email'];
    $msg = $_POST['msg'];
 
-   // От кого
-   $mail->setFrom('ilyabelevcev01@gmail.com', 'Письмо от пользователя сайта');
    // Кому
-   $mail->addAddress('ilyabelevcev00@gmail.com');
+   $mail->addAddress('ilyabelevcev@j72076024.myjino.ru');
    // Тема
-   $mail->Subject = 'Привет! Хочу предложить работу';
-   // $mail->Subject = $topic;
+   $mail->Subject = 'Письмо от пользователя сайта';
 
    // Тело письма
    $body = '<h1>Вам письмо!</h1>';

@@ -34,12 +34,12 @@
             </div>
             <div id="modalContact" class="modal__contact">
               <div class="modal__contact-content">
-                <span>
+                <!-- <span>
                     В данный момент отправка данных мне на почту невозможна, я устраняю все проблемы и прошу простить за предоставленные неудобства
                     <br>
                     Вы можете написать мне на почту, она расположена в конце <a href="/" class="modal__content-link">главной</a> страницы
-                </span>
-                <!-- <form class="modal__contact-form" id="form" action="/sendmail.php" autocomplete="off">
+                </span> -->
+                <form action="/sendmail.php"  method="POST" class="modal__contact-form" id="form">
                   <h2 class="modal__contact-heading">Давай пообщаемся.</h2>
                   <p class="modal__contact-descr"><i>Можно о работе, а можно про отдых и развлечения!.</i></p>
                   <label class="modal__contact-label" for="name">
@@ -76,7 +76,7 @@
                       autocomplete="off"></textarea>
                   </label>
                   <button class="modal__contact-btn" type="submit">Отправить</button>
-                </form> -->
+                </form>
               </div>
             </div>
           </div>

@@ -7,3 +7,4 @@ import { scrollToAncors } from './components/scrollToAncors.js'
 import { calcDate, calcYear } from './components/calcDate.js'
 import { modal, openModal, closeModal } from './components/modal.js'
 import { burgerOpen } from './components/burger.js';
+import { validate } from './components/validate.js'
