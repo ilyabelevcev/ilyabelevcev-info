@@ -17,19 +17,40 @@ export const validate = () => {
                     body: formData,
                 });
                 if(response.ok) {
-                    let result = await response.json();
-                    alert(result.message);
-                    // form.reset();
-                    vars.pageBody.classList.remove('body-hidden');
+                    form.reset();
                     vars.pageBody.classList.remove('_sending');
+                    if(vars.pageBody.classList.contains('contact')) {
+                        vars.formPopupSent.classList.add('active')
+                        vars.formPopupCloseSent.addEventListener('click', () => {
+                            vars.formPopupSent.classList.remove('active')
+                            vars.pageBody.classList.remove('body-hidden');
+                        })
+                    } else {
+                        vars.modalPopupSent.classList.add('active');
+                        vars.modalPopupCloseSent.addEventListener('click', () => {
+                            vars.modalPopupSent.classList.remove('active')
+                            vars.pageBody.classList.remove('body-hidden');
+                        })
+                    }
                 } else {
-                    alert('Ошибка!');
-                    // form.reset();
-                    vars.pageBody.classList.remove('body-hidden');
+                    form.reset();
                     vars.pageBody.classList.remove('_sending');
+                    if(vars.pageBody.classList.contains('contact')) {
+                        vars.formPopupError.classList.add('active')
+                        vars.formPopupCloseError.addEventListener('click', () => {
+                            vars.formPopupError.classList.remove('active')
+                            vars.pageBody.classList.remove('body-hidden');
+                        })
+                    } else {
+                        vars.modalPopupError.classList.add('active');
+                        vars.modalPopupCloseError.addEventListener('click', () => {
+                            vars.modalPopupError.classList.remove('active')
+                            vars.pageBody.classList.remove('body-hidden');
+                        })
+                    }
                 }
             } else {
-                alert('Заполните обязательные поля');
+                console.log('Заполните обязательные поля');
             }
         }
 
@@ -40,7 +61,6 @@ export const validate = () => {
             for (let index = 0; index < formReq.length; index++) {
                 const input = formReq[index];
                 formRemoveError(input);
-                // Для E-mail
                 if(input.classList.contains('__email')) {
                     if (emailTest(input)) {
                         formAddError(input);
@@ -66,7 +86,6 @@ export const validate = () => {
             input.classList.remove('__error');
         }
 
-        // Функция тестирование email
         function emailTest(input) {
             return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
         }

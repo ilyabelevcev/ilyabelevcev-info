@@ -34,14 +34,9 @@
             </div>
             <div id="modalContact" class="modal__contact">
               <div class="modal__contact-content">
-                <!-- <span>
-                    В данный момент отправка данных мне на почту невозможна, я устраняю все проблемы и прошу простить за предоставленные неудобства
-                    <br>
-                    Вы можете написать мне на почту, она расположена в конце <a href="/" class="modal__content-link">главной</a> страницы
-                </span> -->
                 <form action="/sendmail.php"  method="POST" class="modal__contact-form" id="form">
-                  <h2 class="modal__contact-heading">Давай пообщаемся.</h2>
-                  <p class="modal__contact-descr"><i>Можно о работе, а можно про отдых и развлечения!.</i></p>
+                  <h2 class="modal__contact-heading">Давай пообщаемся</h2>
+                  <p class="modal__contact-descr"><i>Для того, чтобы отправить данные необходимо отключить <strong>VPN</strong></i></p>
                   <label class="modal__contact-label" for="name">
                     Имя *
                     <input
@@ -80,5 +75,19 @@
               </div>
             </div>
           </div>
+        </div>
+        <div id="modalPopupSent" class="modal__contact-popup">
+            <div class="modal__popup-info">
+                <h2 class="modal__popup-heading">Спасибо за обращение!</h2>
+                <p class="modal__popup-descr">Данное обращение уже поступило мне на почту, я на него отвечу в ближайшее время</p>
+                <button id="modalPopupCloseSent" class="btn modal__popup-btn">Закрыть</button>
+            </div>
+        </div>
+        <div id="modalPopupError" class="modal__contact-popup">
+            <div class="modal__popup-info">
+                <h2 class="modal__popup-heading">Что-то пошло не так...</h2>
+                <p class="modal__popup-descr">В ближайшее время я устраню проблему отправки данных</p>
+                <button id="modalPopupCloseError" class="btn modal__popup-btn">Закрыть</button>
+            </div>
         </div>
       </div>

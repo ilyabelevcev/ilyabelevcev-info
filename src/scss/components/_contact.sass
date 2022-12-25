@@ -31,8 +31,6 @@
         @include flex-v-center
         flex-direction: column
         position: relative
-        // .form__link
-        //     color: $active-hover-color
         &::before,&::after
             content: 'Contact'
             position: absolute
@@ -101,4 +99,45 @@
             color: $active-hover-color
             border-color: $active-hover-color
             border-radius: 0
+.form__popup
+    width: 100%
+    height: 100%
+    position: fixed
+    z-index: 1001
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    background-color: #00000094
+    visibility: hidden
+    &.active
+        visibility: visible
+    .form__popup-info
+        color: $default-text-color
+        background-color: #000000df
+        @include flex-v-center
+        flex-direction: column
+        position: absolute
+        z-index: 1002
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        width: 80%
+        border-radius: 20px
+        padding: 30px 60px
+    .form__popup-heading
+        text-align: center
+        font-size: $h2
+        margin: $marginH2
+    .form__popup-descr
+        text-align: center
+        font-size: $descr-fz
+        line-height: $descr-lh
+        margin-bottom: 40px
+    .form__popup-btn
+        cursor: pointer
+        color: $default-text-color
+        background-color: transparent
+        border: 1px solid $default-text-color
+        border-radius: 20px
+        padding: 10px 60px
 

@@ -15,6 +15,14 @@ export default {
     firstButton: document.querySelector('#modalClose'),
     secondButton: document.querySelector('#modal'),
   },
+  modalPopupSent: document.querySelector('#modalPopupSent'),
+  modalPopupError: document.querySelector('#modalPopupError'),
+  modalPopupCloseSent: document.querySelector('#modalPopupCloseSent'),
+  modalPopupCloseError: document.querySelector('#modalPopupCloseError'),
+  formPopupSent: document.querySelector('#formPopupSent'),
+  formPopupError: document.querySelector('#formPopupError'),
+  formPopupCloseSent: document.querySelector('#formPopupCloseSent'),
+  formPopupCloseError: document.querySelector('#formPopupCloseError'),
   // body
   pageBody: document.querySelector('body'),
   // header
