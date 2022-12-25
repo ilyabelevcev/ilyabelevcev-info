@@ -15,8 +15,7 @@
    $msg = $_POST['msg'];
 
    // Кому
-//    $mail->addAddress('ilyabelevcev@j72076024.myjino.ru');
-    $mail->addAddress('ilyabelevcev00@gmail.com')
+   $mail->addAddress('ilyabelevcev@j72076024.myjino.ru');
    // Тема
    $mail->Subject = 'Письмо от пользователя сайта';
 
